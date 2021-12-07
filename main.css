@@ -15,7 +15,7 @@ h1 {
 }
 
 
-/*Nav*/
+/*Navigtionsbar and Burger-menu*/
 
 nav {
     display: flex;
@@ -75,6 +75,9 @@ nav a:focus {
     outline: none;
 }
 
+
+/*This is my flexboxes*/
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -85,6 +88,8 @@ nav a:focus {
 .flex-item-left {
     padding: 10px;
     margin: 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
     background-color: white;
     flex: 50%;
     border-radius: 20px;
@@ -92,6 +97,8 @@ nav a:focus {
 
 .flex-item-right {
     margin: 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
     background-color: white;
     padding: 10px;
     flex: 50%;
@@ -127,7 +134,11 @@ article p {
 }
 
 .info {
-    font-size: 5vw;
+    font-size: 4.2vw;
+}
+
+span {
+    font-weight: bold;
 }
 
 
@@ -159,6 +170,13 @@ article p {
     margin-top: 2rem;
 }
 
+
+/*Other tags*/
+
+meter {
+    width: 15rem;
+}
+
 @media (min-width: 768px) {
     .flex-container {
         flex-direction: row;
@@ -172,8 +190,18 @@ article p {
         height: 35%;
     }
     .info {
-        font-size: 2.1vw;
+        font-size: 2vw;
         margin-top: 1.5rem;
+    }
+    .flex-item-left {
+        margin-left: 80px;
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+    .flex-item-right {
+        margin-left: 40px;
+        margin-right: 80px;
+        margin-top: 30px;
     }
 }
 
