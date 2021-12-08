@@ -185,6 +185,7 @@ meter {
     .img-responsive {
         width: 40%;
         height: 100%;
+        max-height: 150px;
     }
     h1 {
         font-size: 3vw;
@@ -195,7 +196,7 @@ meter {
         height: 35%;
     }
     .info {
-        font-size: 1.2vw;
+        font-size: 1.4vw;
         margin-top: 1.5rem;
     }
     .flex-item-left {
@@ -209,6 +210,7 @@ meter {
         margin-right: 80px;
         margin-top: 30px;
         max-width: 400px;
+        font-size: 18px;
     }
     .video {
         max-width: 500px;
