@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0, auto;
+}
+
+body {
+    background-color: #d6a895;
+}
+
+.infobox {
+    background-color: #815d4e;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    padding: 1em;
+    -webkit-box-shadow: 1px 1px 10px 2px #000;
+    box-shadow: 1px 1px 10px 2px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 3vh;
+}
+
+h1 {
+    color: var(--fontcolor);
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--font);
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    opacity: 0.56;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: var(--bgc);
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.nav-ul a {
+    display: inline-block;
+    padding-top: 0.10rem;
+    padding-bottom: 0.10rem;
+    color: var(--fontcolor);
+    width: 100%;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--hovercolor);
+}
+
+.logo {
+    float: left;
+}
+
+.fa-recycle {
+    color: green;
+}
+
+.releather-left {
+    display: none;
+}
+
+.releather-mid {
+    border-style: solid;
+    border-width: 2px
+}
+
+.hamburger {
+    border: 0;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    background-color: transparent;
+}
+
+.home {
+    color: #fcfcfc;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.icons {
+    padding: 1.5rem;
+}
+
+.leather {
+    margin-top: -5rem;
+}
+
+header {
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hiaku {
+    background-color: #815d4e;
+    -webkit-box-shadow: 1px 1px 10px 2px #000;
+    text-align: center;
+    flex: 30%;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.hiaku p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hiaku button {
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 0px;
+    background-color: #DEDDDB;
+}
+
+.Cuelga {
+    background-color: #815d4e;
+    -webkit-box-shadow: 1px 1px 10px 2px #000;
+    text-align: center;
+    flex: 30%;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.Cuelga p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.Cuelga button {
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 0px;
+    background-color: #DEDDDB;
+}

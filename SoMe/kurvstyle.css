@@ -1,0 +1,505 @@
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bgc: #d6a895;
+    --fontcolor: #592b18;
+    --hovercolor: rgb(104, 66, 50);
+    --boxcolor: #A0705C;
+}
+
+
+/*Mobil navi - virker ikke*/
+
+
+/*main body mobil*/
+
+.boss {
+    background-color: #D6A895;
+}
+
+.boss h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.kozavase {
+    width: 200px;
+    height: 200px;
+}
+
+.hiakolampe {
+    width: 200px;
+    height: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 408px;
+    padding: 10px;
+    justify-content: center;
+    grid-template-rows: 100px 250px 250px 330px 175px;
+    grid-row-gap: 20px;
+}
+
+.grid {
+    background-color: #EDEBE8;
+    border: 1px solid;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-tekst i {
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.grid-tekst p {
+    padding: 15px 10px 10px 35px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #EDEBE8;
+}
+
+.grid-lampe img {
+    float: left;
+    margin: 14px 0px 10px 10px;
+}
+
+.grid-lampe li {
+    font-size: 15px;
+    font-weight: bold;
+    color: #8B8987;
+}
+
+.grid-lampe li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.grid-lampe h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.købknap {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 35px 10px 35px;
+}
+
+.pris {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.grid-lampe i {
+    float: right;
+    margin: 20px 15px 0px 0px;
+    font-size: 20px;
+    color: black;
+}
+
+.grid-vase img {
+    float: left;
+    margin: 14px 0px 10px 10px;
+}
+
+.grid-vase li {
+    font-size: 15px;
+    font-weight: bold;
+    color: #8B8987;
+}
+
+.grid-vase li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.grid-vase h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.købknap {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 35px 10px 35px;
+}
+
+.pris {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.grid-vase i {
+    float: right;
+    margin: 30px 10px;
+    font-size: 20px;
+    margin: 20px 15px 0px 0px;
+    color: black;
+}
+
+.grid-betaling {
+    padding: 15px;
+}
+
+.listevenstre {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #76726E;
+    text-align: left;
+    list-style-type: none;
+}
+
+.listevenstre li {
+    margin-top: 10px;
+    margin: 10px 110px 0px 20px;
+}
+
+.listehøjre {
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    list-style-type: none;
+}
+
+.listehøjre li {
+    margin-top: 10px;
+    margin: 10px 20px 0 0;
+}
+
+.vandretlinje {
+    border: solid 2px #707070;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 50px 0px 50px;
+}
+
+.prisvenstre {
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.prisvenstre li {
+    margin: 10px 140px 0px 0px;
+}
+
+.prishøjre {
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.prishøjre li {
+    margin: -46px 20px 0px 0px;
+}
+
+.knapkassen {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: solid 0px;
+    margin-top: 50px;
+    padding: 15px 150px 15px 150px;
+}
+
+.grid-rabatkode h4 {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.grid-rabatkode p {
+    font-size: 12px;
+    font-weight: bold;
+    border: solid 1px black;
+    margin: 10px 50px 0px 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+.grid-rabatkode button {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
+}
+
+
+/*Footer mobil*/
+
+.column1 {
+    float: center;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    background-color: var(--boxcolor);
+    color: var(--bgc);
+}
+
+.column1 a {
+    color: var(--bgc);
+    letter-spacing: 15px;
+}
+
+@media screen and (min-width:728px) {
+    /*Navi desktop*/
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        opacity: 0.56;
+        font-size: 32px;
+        font-weight: bold;
+        background-color: var(--bgc);
+    }
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+        width: 100%;
+    }
+    .nav-ul a {
+        display: inline-block;
+        padding-top: 0.10rem;
+        padding-bottom: 0.10rem;
+        color: var(--fontcolor);
+        width: 100%;
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+
+    .nav-ul li{
+        margin: 0px 50px 0px 50px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        color: var(--hovercolor);
+    }
+    .logo {
+        float: left;
+    }
+    .fa-recycle {
+        color: green;
+    }
+    .releather-left {
+        display: none;
+    }
+    .releather-mid {
+        border-style: solid;
+        border-width: 2px
+    }
+    .hamburger {
+        border: 0;
+        color: #fcfcfc;
+        cursor: pointer;
+        font-size: 20px;
+        display: none;
+        background-color: transparent;
+    }
+    .home {
+        color: #fcfcfc;
+        cursor: pointer;
+        display: none;
+    }
+    .hamburger:focus {
+        outline: none;
+    }
+    .icons {
+        padding: 1.5rem;
+    }
+    .leather {
+        margin-top: -5rem;
+        display: block;
+        width: 100%;
+        height: 12rem;
+        display: block
+    }
+    /*Main body desktop*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 500px 380px;
+        padding: 10px;
+        justify-content: center;
+        grid-template-rows: 100px 50px 50px 30px 50px 80px 5px 5px;
+        grid-column-gap: 20px;
+    }
+    .grid-tekst {
+        grid-column: 1/3;
+        grid-row-start: 1;
+    }
+    .grid-lampe {
+        grid-row: 2 / span 4;
+    }
+    .grid-vase {
+        grid-row: 6 /span 8;
+    }
+    .grid-betaling {
+        grid-column: 2;
+        grid-row: 2 / span 5;
+    }
+    .grid-rabatkode {
+        grid-column: 2;
+        grid-row: 7 / span 7;
+    }
+    .kozavase {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .hiakolampe {
+        width: 200px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .grid-vase i {
+        float: right;
+        margin: 33px 15px 0px 0px;
+        font-size: 20px;
+        color: black;
+    }
+    .listevenstre {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        color: #76726E;
+        text-align: left;
+    }
+    .listevenstre li {
+        margin: 10px 100px 0px 0px;
+        color: black;
+    }
+    .listehøjre {
+        display: inline-block;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .listehøjre li {
+        margin: 10px 15px 0px 0px;
+    }
+    .knapkassen {
+        margin-top: 75px;
+        padding: 10px 145px 10px 150px;
+    }
+    .grid-rabatkode h4 {
+        font-size: 20px;
+    }
+    .grid-rabatkode p {
+        font-size: 10px;
+        padding: 15px 20px 15px 20px;
+        margin-top: 5px;
+        background-color: #BAAEA8;
+    }
+    .grid-rabatkode button {
+        margin: 8px 0px 8px 0px;
+        border: solid 0px;
+        font-size: 12px;
+        padding: 10px 30px 10px 30px;
+    }
+    .grid-tekst i {
+        float: left;
+        margin-top: 40px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .grid-tekst p {
+        margin-top: 10px;
+        padding: 15px 120px 10px 120px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #815D4E;
+    }
+    .grid-tekst {
+        background: #815D4E;
+        border-radius: 10px;
+        border: solid 0px;
+    }
+    .grid {
+        background-color: #815D4E;
+    }
+    .grid-vase li {
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+    .grid-lampe li {
+        color: black;
+    }
+    .grid-lampe {
+        border-radius: 10px;
+        border: solid 0px;
+    }
+    .grid-vase {
+        border-radius: 10px;
+        border: solid 0px;
+    }
+    .vandretlinje {
+        border: solid 2px black;
+    }
+    .grid-betaling {
+        border-radius: 10px;
+        border: 0px;
+    }
+    .grid-rabatkode {
+        border-radius: 10px;
+        border: 0px;
+    }
+    .købknap {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 30px 7px 30px;
+        background-color: #BAAEA8;
+        border: solid 1px black;
+    }
+    /*footer desktop*/
+    .grid-container-b {
+        position: relative;
+        color: var(--fontcolor);
+        text-align: center;
+        opacity: 1;
+    }
+    .grid-container:after {
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.56;
+        z-index: -1;
+    }
+
+    }
