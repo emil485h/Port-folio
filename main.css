@@ -81,8 +81,9 @@ nav a:focus {
 .flex-container {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
+    justify-content: center;
 }
 
 .flex-item-left {
@@ -185,23 +186,36 @@ meter {
         width: 40%;
         height: 100%;
     }
+    h1 {
+        font-size: 3vw;
+        font-size: max(3vw, 32px)
+    }
     .icons {
         width: 15%;
         height: 35%;
     }
     .info {
-        font-size: 2vw;
+        font-size: 1.2vw;
         margin-top: 1.5rem;
     }
     .flex-item-left {
         margin-left: 80px;
         margin-right: 40px;
         margin-top: 30px;
+        max-width: 400px;
     }
     .flex-item-right {
         margin-left: 40px;
         margin-right: 80px;
         margin-top: 30px;
+        max-width: 400px;
+    }
+    .video {
+        max-width: 500px;
+        min-height: 300px;
+    }
+    .video h1 {
+        font-size: 32px
     }
 }
 
@@ -218,7 +232,7 @@ meter {
         display: block;
     }
     article p {
-        font-size: 3.5vw
+        font-size: 3.5vw;
     }
     h1 {
         font-size: 4vw;

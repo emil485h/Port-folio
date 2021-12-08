@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Min Side</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/Skabelon.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<nav class="topnav">
+  <!-- <a href="#home" class="active">Logo</a> -->
+  <img src="Images/logo.png" alt="Logo" style="height: 50px;">
+  <nav id="myLinks">
+    <a href="#forside" class="active">Forside</a>
+    <a href="#login">Login</a>
+    <a href="#priser">Priser</a>
+    <a href="#min_side">Min Side</a>
+    <a href="#om_os">Om os</a>
+  </nav>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- <div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div> -->
+
+<div class="profile-card">
+  <div class="image-container">
+    <img src="Images/iiona-virgin-lssGvg6tpnU-unsplash.jpg" alt="Profile" style="width: 100%;">
+    <div class="title">
+      <h2>Jane Doe</h2>
+    </div>
+  </div>
+
+  <div class="main-container">
+   <p><i class="fa fa-envelope info"></i>Email</p>
+   <p><i class="fa fa-phone info"></i>Nummer</p>
+  <p><i class="fa fa-key info"></i>Password</p>
+
+
+  <h2 class="indstillinger">Indstillinger</h2>
+  
+  <button type="button" class="ændre">Ændre adgangskode</button>
+
+
+  <h3>Tema</h3>
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  
+  <button type="button" class="button">Log ud</button>
+
+  </div>
+
+ 
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

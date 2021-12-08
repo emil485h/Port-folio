@@ -1,0 +1,120 @@
+
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Introduktionstekst og billede */
+.info {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    justify-items: center;
+} 
+
+.info article {
+    max-width: 580px;
+}
+
+.info article img {
+    width: 100%;
+}
+
+.info aside {
+    margin: 0 auto;
+    margin-top: 60px;
+    min-width: 300px;
+    max-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+}
+
+.info aside p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.info aside div:first-child {
+    text-align: right;
+}
+
+.info aside div {
+    margin: 6px;
+    max-width: 130px;
+    height: 130px;
+}
+
+.info aside img {
+    width: 100%;
+}
+
+
+
+
+/* Sektioner med de forskellige hold */
+
+.hold {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.hold .container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hold .container img {
+    margin-top: 60px;
+    max-width: 300px;
+}
+
+.hold .container h4 {
+    margin: 14px 0 10px 0;
+    font-size: 1.5em;
+}
+
+.hold .container .box {
+    padding: 10px;
+    background-color: #DC0000;
+    border-radius: 30px;
+}
+
+.hold .container .dato {
+    margin-top: 12px;
+}
+
+.hold .container .dato, .hold .container .tlf {
+    font-weight: bold;
+} 
+
+
+@media only screen and (min-width: 950px) {
+    header h1 {
+        font-size: 4.6em;
+        margin: 20px auto 10px auto;
+    }
+    .info {
+        display: flex;
+        width: 80%;
+    }
+    .hold {
+        display: flex;
+    }
+    .hold .container {
+        margin: 0 18px;
+    }
+    .hold .container:nth-child(2) {
+        margin-top: 240px;
+    }
+}
+
+

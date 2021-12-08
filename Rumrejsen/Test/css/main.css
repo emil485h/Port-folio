@@ -1,0 +1,128 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(14, 12, 12);
+    padding-top: 10px;
+}
+
+h1{
+    color: chartreuse;
+    font-size: 50px;
+    background-color: black;
+    margin-left: -8px;
+    /* padding-left: 40%; */
+    margin-top: -10px;
+    /* margin-right: -10px; */
+    text-align:center;
+}
+
+p{
+    color: chartreuse;
+    font-size: 25px;    
+    background-color: black;
+    margin-left: -8px;
+    /* padding-left: 44%; */
+    margin-top: -33px;
+    margin-right: -10px;
+    text-align:center;
+}
+
+
+.mars-planet{
+    margin-left: -10px;
+    padding-left: 25%;
+    margin-top: -24px;
+    /* background-color: black; */
+    margin-right: -10px;
+    align-content: center;
+    width: 100%;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #56e856;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #56e856;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav i {
+    float: right;
+}
+
+nav ul i {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li i {
+    display: inline-block;
+    margin-left: 35px;
+    padding-top: 0px;
+    position: relative;
+}
+
+nav i {
+    color: white;
+    font-size: 18px;
+}
+
+nav i::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #56e856;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav i:hover {
+    color: #56e856;
+}
+
+nav i:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'dejavu_serifbook';
+    src: url('DejaVuSerif-webfont.eot');
+    src: url('DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'), url('DejaVuSerif-webfont.woff2') format('woff2'), url('DejaVuSerif-webfont.woff') format('woff'), url('DejaVuSerif-webfont.ttf') format('truetype'), url('DejaVuSerif-webfont.svg#dejavu_serifbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #D6A895;
+}
+
+
+/*Overskrift*/
+
+h3 {
+    font-size: 40px;
+    font-family: 'dejavu_serifbook';
+    text-align: center;
+}
+
+
+/*Under-overskrifter på items*/
+
+h2 {
+    font-size: 25px;
+    font-family: 'dejavu_serifbook';
+}
+
+p {
+    font-size: 15px;
+    font-family: 'dejavu_serifbook';
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    opacity: 0.56;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #D6A895;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.nav-ul a {
+    display: inline-block;
+    padding-top: 0.10rem;
+    padding-bottom: 0.10rem;
+    color: #592b18;
+    width: 100%;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(104, 66, 50);
+}
+
+.logo {
+    float: left;
+}
+
+.fa-recycle {
+    color: green;
+}
+
+.releather-left {
+    display: none;
+}
+
+.releather-mid {
+    border-style: solid;
+    border-width: 2px
+}
+
+.hamburger {
+    border: 0;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    background-color: transparent;
+}
+
+.home {
+    color: #fcfcfc;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.icons {
+    padding: 1.5rem;
+}
+
+.leather {
+    margin-top: -5rem;
+    display: none;
+}
+
+header {
+    z-index: -1;
+}
+
+header h3 {
+    margin: 2rem 0;
+}
+
+
+/*Første flexbox*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10vh;
+}
+
+.container img {
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+
+/*Anden flexbox*/
+
+.browsing {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10vh;
+}
+
+.infoboks {
+    background-color: #A0705C;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1em;
+    box-shadow: 1px 1px 10px 2px black;
+}
+
+
+/*Knappen "her!"*/
+
+.btn {
+    background-color: #A0705C;
+    border-style: 1px solid black;
+    margin-left: 10px;
+    margin-top: -50px;
+    font-size: 15px;
+    font-family: 'dejavu_serifbook';
+}
+
+.hiako {
+    background-color: #A0705C;
+    flex: 30%;
+    margin: 5vh;
+    text-align: center;
+    box-shadow: 1px 1px 10px 2px black;
+    padding-bottom: 8rem;
+    border-radius: 10px;
+}
+
+
+/*Knapperne "Tilføj til kurv"*/
+
+.tilfoj {
+    margin-top: 3rem;
+}
+
+.tilfoj a {
+    background-color: #d6a895;
+    text-decoration: none;
+    font-family: 'dejavu_serifbook';
+    color: black;
+    padding: 15px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.browsing a {
+    text-decoration: none;
+    color: black;
+    font-family: 'dejavu_serifbook';
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+
+.lamper {
+    background-color: #A0705C;
+    box-shadow: 1px 1px 10px 2px black;
+    margin: 5vh;
+    padding: 2em;
+    flex: 30%;
+    display: flex;
+}
+
+.vaser {
+    background-color: #A0705C;
+    box-shadow: 1px 1px 10px 2px black;
+    margin: 5vh;
+    padding: 2em;
+    flex: 30%;
+    display: flex;
+}
+
+
+/*Footer*/
+
+.column1 {
+    float: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    background-color: #A0705C;
+    color: #d6a895;
+}
+
+.column1 a {
+    color: #d6a895;
+    letter-spacing: 15px;
+}
+
+@media screen and (min-width: 461px) {
+    .container {
+        display: flexbox;
+        flex-direction: row;
+    }
+    .browsing {
+        display: flexbox;
+        flex-direction: row;
+    }
+    .browsing a {
+        text-decoration: none;
+        color: black;
+        font-family: 'dejavu_serifbook';
+        border: 1px solid black;
+        padding: 5px;
+        margin: 1em;
+        border-radius: 5px 5px 5px 5px;
+        font-weight: bold;
+    }
+    .browsing p {
+        margin-top: 20px;
+    }
+    .leather {
+        display: block;
+        width: 100%;
+        height: 12rem;
+    }
+    nav {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 30px
+    }
+    p {
+        font-size: 25px;
+    }
+    .lamper {
+        font-size: 25px;
+    }
+    .vaser {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 50px;
+    }
+}

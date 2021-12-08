@@ -1,0 +1,305 @@
+@media screen and (max-width:600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    background-color:black;
+    background-image: url(img/Roser.png);
+    font-family: calisto_italic;
+}
+
+li {
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    max-width: 666px;
+    margin: 0 auto;
+    margin-top: -400px;
+}
+
+p.text1 {
+    max-width: 480px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-right: 26vw;
+}
+
+.dropbtn {
+    padding: 2%;
+}
+
+.dropdown {
+    float: center;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    float: right;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    bottom: 50vw;
+}
+
+
+/* Drop down menu: Dette er linket mellem at trykke på burgermenu'en og menu'en popper op */
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Drop down menu: viser om websites. Kan her ændres i længden af det grå. */
+
+.column {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    height: 280px;
+}
+
+.column h3 {
+    margin-top: 15vw;
+}
+
+
+/* Tekst i drop down menu'en */
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 5vw;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Burger menu - sådan laves den */
+
+.dropbtn>div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+
+/* Logo image */
+
+.logo img {
+    height: 50px;
+    float: right;
+}
+
+h2 {
+    color: rgb(49, 45, 45);
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-left: 32%;
+}
+
+h3 {
+    color: rgb(252, 4, 4);
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-left: 37%;
+}
+
+img {
+    border-radius: 5%;
+}
+
+.btmsec img {
+    margin-left: 5%;
+}
+
+p {
+    color: #FFE3AC;
+    margin-bottom: 0px;
+}
+
+.button1 {
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: center;
+    font-size: 18px;
+    margin: 4px 0px;
+    cursor: pointer;
+    margin-left: 32%;
+}
+
+.button2 {
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 8px;
+    cursor: pointer;
+    margin-left: 18px;
+}
+
+
+/*Footer area*/
+
+footer {
+    margin-top: 100px;
+    height: 100px;
+    color: grey;
+    left: 0;
+    right: 0;
+}
+
+.footer-content {
+    background: #DC0000; 
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin-bottom: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    line-break: auto;
+}
+
+.footer-content ul a {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.footer-content ul li {
+    display: inline-block;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #DC0000;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    color: #FFE3AC;
+  }
+  
+  .topnav a.icon {
+    background:#dc0000;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: black;
+    color: #FFE3AC;
+  }
+  
+  .active {
+    /* background-color: #ffdcef; */
+    color: rgb(0, 0, 0);
+  }
+
+.h2{ 
+    margin-top: 70px;
+    margin-left: 305px;
+    display: flex;
+    justify-content: center;
+}
+
+.h2 img {
+    width: 100%;
+}
+
+.h2 .box {
+    max-width: 350px;
+}
+
+.h2 .box:nth-child(2) {
+    margin-top: +310px;
+
+}
+
+.h2 .box:nth-child(3) {
+    margin-top: +650px;
+
+}
+
+.google-maps{
+  /* background-color: #DC0000;
+  border-style: none;
+  padding:5px;
+  font-size: xx-large;
+  align-self: left;
+  border-radius: 0.5em;
+  margin-left: 5%;
+  margin-top: -10px */
+
+  position: absolute;
+  top:240%;
+  left: 18%;
+  transform: translateY(-50%);
+  border-style: none;
+  padding:5px;
+  font-size: xx-large;
+  background-color: #DC0000;
+  border-radius: 0.2em;
+  text-decoration: none;
+}
+
+.google-maps a{
+    text-decoration: none;
+}

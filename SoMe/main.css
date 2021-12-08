@@ -1,0 +1,398 @@
+    * {
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    @font-face {
+        font-family: 'dejavu_serifbook';
+        src: url('DejaVuSerif-webfont.eot');
+        src: url('DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'), url('DejaVuSerif-webfont.woff2') format('woff2'), url('DejaVuSerif-webfont.woff') format('woff'), url('DejaVuSerif-webfont.ttf') format('truetype'), url('DejaVuSerif-webfont.svg#dejavu_serifbook') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+     :root {
+        --bgc: #d6a895;
+        --fontcolor: #592b18;
+        --hovercolor: rgb(104, 66, 50);
+        --boxcolor: #A0705C;
+        --font: 'DejaVu';
+    }
+    
+    body {
+        background-color: var(--bgc);
+    }
+    /*Navigationbar*/
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        opacity: 0.56;
+        font-size: 32px;
+        font-weight: bold;
+        background-color: var(--bgc);
+    }
+    
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+        width: 100%;
+    }
+    
+    .nav-ul a {
+        display: inline-block;
+        padding-top: 0.10rem;
+        padding-bottom: 0.10rem;
+        color: var(--fontcolor);
+        width: 100%;
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+    
+    nav a:hover,
+    nav a:focus {
+        color: var(--hovercolor);
+    }
+    
+    .logo {
+        float: left;
+    }
+    
+    .fa-recycle {
+        color: green;
+    }
+    
+    .releather-left {
+        display: none;
+    }
+    
+    .releather-mid {
+        border-style: solid;
+        border-width: 2px
+    }
+    
+    .hamburger {
+        border: 0;
+        color: #fcfcfc;
+        cursor: pointer;
+        font-size: 20px;
+        display: none;
+        background-color: transparent;
+    }
+    
+    .home {
+        color: #fcfcfc;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .hamburger:focus {
+        outline: none;
+    }
+    
+    .icons {
+        padding: 1.5rem;
+    }
+    
+    .leather {
+        margin-top: -5rem;
+        display: block;
+        width: 100%;
+        height: 12rem;
+    }
+    
+    header {
+        z-index: -1;
+    }
+    /*Typografi*/
+    
+    .vores-historie {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    /*vaser*/
+    
+    .vaser-h1 {
+        color: var(--fontcolor);
+        text-align: center;
+        font-size: 50px;
+        font-family: var(--font);
+    }
+    
+    .vucontainer {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .vu {
+        flex: 30%;
+        box-shadow: 1px 1px 10px 2px #000;
+        background-color: var(--boxcolor);
+        margin: 2.5rem;
+        padding-bottom: 8rem;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+    }
+    
+    .vucuelega {
+        margin-left: 10rem;
+    }
+    
+    .vuflorero {
+        margin-right: 10rem;
+    }
+    
+    .vuheader {
+        margin: 0.625rem;
+        font-family: var(--font);
+        font-size: 30px;
+    }
+    
+    .vasebilleder {
+        margin-bottom: 1.25rem;
+        border-radius: 10px;
+        width: 80%;
+        height: 70%;
+    }
+    
+    .buybtn {
+        background-color: var(--bgc);
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        border-radius: 10px;
+        max-width: 10rem;
+        margin-top: 0.625rem;
+    }
+    
+    .buybtn a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 23px;
+        color: var(--fontcolor);
+        font-family: var(--font);
+    }
+    
+    .pris {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: -0.625rem;
+        padding: 0.625rem;
+        font-family: var(--font);
+    }
+    
+    .brdtext {
+        font-family: var(--font);
+        font-size: 25px;
+        margin-bottom: 1.25rem;
+    }
+    /*Footer*/
+    
+    .column1 {
+        float: center;
+        width: 100%;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        background-color: var(--boxcolor);
+        color: var(--bgc);
+    }
+    
+    .column1 a {
+        color: var(--bgc);
+        letter-spacing: 15px;
+    }
+    /* .grid-container{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 1rem;
+    background-image: url(img/Leather.png);
+} */
+    
+    .grid-container {
+        position: relative;
+        color: var(--fontcolor);
+        text-align: center;
+        opacity: 1;
+    }
+    
+    .grid-container:after {
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.56;
+        z-index: -1;
+    }
+    
+    .intro {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    aside {
+        width: 100%;
+        margin-left: auto;
+        float: center;
+    }
+    
+    figure.item {
+        /* To correctly align image, regardless of content height: */
+        display: inline-block;
+        /* To horizontally center images and caption */
+        text-align: center;
+        /* The width of the container also implies margin around the images. */
+        /* width: 10rem; */
+        margin-left: 10%;
+    }
+    
+    .profile {
+        width: 150px;
+        text-align: center;
+    }
+    
+    .caption {
+        /* Make the caption a block so it occupies its own line. */
+        display: block;
+        color: rgb(0, 0, 0);
+        padding-bottom: 1.5rem;
+    }
+    
+    .koza {
+        background-color: #96705f;
+        flex: 30%;
+        margin: 3rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 3px 3px 5px rgb(0, 0, 0);
+        padding: 2rem 1rem 9rem 1rem
+    }
+    
+    .intro-billeder {
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    .billede-arbejde {
+        border-radius: 10px;
+        width: 70%;
+        height: 80%;
+    }
+    
+    .billede-process {
+        border-radius: 10px;
+        width: 100%;
+        height: 60%;
+    }
+    /*Media querie for mobile*/
+    
+    @media screen and (max-width: 845px) {
+        .nav-ul {
+            margin-top: 1rem;
+            margin-left: -1rem;
+            padding-left: 1rem;
+            display: none;
+            font-size: 17px;
+            width: 100%;
+            flex-direction: column;
+            background-color: var(--boxcolor);
+        }
+        .nav-ul .icons {
+            margin: -2rem 0 -1rem 0;
+        }
+        nav {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            opacity: 1;
+            background-color: var(--boxcolor);
+        }
+        .leather {
+            display: none;
+        }
+        .home {
+            display: flex;
+            display: show;
+            width: 50%;
+        }
+        .nav-ul a {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            font-size: 1.8em;
+        }
+        .nav-ul.show {
+            display: flex;
+        }
+        .nav-ul .releather-mid {
+            display: none;
+            overflow: hidden;
+        }
+        .releather-mid {
+            display: none;
+        }
+        .releather-left {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 1rem;
+            color: var(--fontcolor);
+            font-size: 2.2rem;
+            border-style: solid;
+            border-width: 2px;
+            padding: 0 3px 0 3px;
+            text-decoration: none;
+        }
+        .hamburger {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 3rem;
+            color: var(--fontcolor);
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+        }
+        .koza {
+            padding: 2rem 1rem 1rem 1rem;
+        }
+        .vucontainer {
+            display: flex;
+            flex-direction: column;
+        }
+        .buybtn {
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+        }
+        .brdtext {
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+        }
+        .vucuelega {
+            margin-left: 2.5rem;
+        }
+        .vuflorero {
+            margin-right: 2.5rem;
+        }
+    }
+    /*Media querie for tablet*/
+    
+    @media screen and (max-width: 1079px) {}
+    /*Media querie for computer*/
+    
+    @media screen and (min-width: 1920px) {
+        /*Vaser siden*/
+        /*Hovedside*/
+        /**/
+        /**/
+    }
