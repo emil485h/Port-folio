@@ -193,6 +193,15 @@
                         float: left;
                         border-radius: 10px
                     }
+
+                    .img-responsive-hjemmesider {
+                        width: 20%;
+                        height: 20%;
+                        text-align: left;
+                        flex: 30%;
+                        float: left;
+                        border-radius: 10px
+                    }
                     
                     .portrait {
                         display: flex;
@@ -215,38 +224,70 @@
                     meter {
                         width: 15rem;
                     }
+
+                    .pc{
+                        display: none;
+                    }
+
+                    footer{
+                        display: flex;
+                        justify-content: center;
+                        max-width:400px;
+                        margin-top:30px;
+                    }
                     
                     @media (min-width: 768px) {
                         .flex-container {
                             flex-direction: row;
                         }
                         .img-responsive {
-                            width: 40%;
-                            height: 100%;
+                            width: auto;
+                            height: auto;
                             max-height: 150px;
                         }
+
+                        .img-responsive-hjemmesider {
+                            width: auto;
+                            height: auto;
+                            max-height: 150px;
+                        }
+
+                       
                         h1 {
                             font-size: 32px;
+                            justify-content:center;
                         }
                         .icons {
                             width: 15%;
-                            height: 35%;
+                            height: auto;
+                            display: flex;
+                    
+                            flex: 30%;
+                        }
+
+                        .comp{
+                            flex-direction: column;
+                            
                         }
                         .info {
                             font-size: 0.7vw;
                             margin-top: 1.5rem;
                         }
+
+                        
                         .flex-item-left {
                             margin-left: 80px;
                             margin-right: 40px;
                             margin-top: 30px;
-                            max-width: 800px;
+                            max-width: 660px;
+                            min-height: 285px;
                         }
                         .flex-item-right {
                             margin-left: 40px;
                             margin-right: 80px;
                             margin-top: 30px;
                             max-width: 250px;
+                            min-width: 250px;
                             font-size: 18px;
                             flex: 70%;
                         }
@@ -262,6 +303,39 @@
                         .portrait {
                             display: none;
                         }
+
+                        .box-icons{
+                            display: flex;
+                            margin-top: 70px;
+                            max-width: 1000px;
+                        }
+                        /*Denne class bliver gemt når størrelsen er lavere end 768px */
+                        .mobile{
+                            display: none;
+                        }
+
+                        /*denne class bliver vist når størrelsen er minimum 768px*/
+                        .pc{
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                        .pc-info {
+                            max-height: 200px;
+                            flex-direction: column;
+                        }
+
+                        .pc-contact {
+                            margin-left: -10px;
+                            margin-bottom: -20pxpx;
+                        }
+
+                        .hjemmesider{
+                            max-width: 500px;
+                            min-width: 350px;
+                        }
+
                     }
                     
                     @media screen and (max-width: 767px) {
