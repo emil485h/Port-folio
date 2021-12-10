@@ -1,289 +1,285 @@
-* {
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #02111B;
-    width: 100%;
-    height: 100vw;
-}
-
-h1 {
-    color: black;
-    /* padding-left: 1rem; */
-    margin-top: 5px;
-    font-size: 3vw;
-}
-
-#Logo {
-    display: flex;
-    animation: fill 0.5s ease forwards 3.5s;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#Logo path:nth-child(1) {
-    stroke-dasharray: 463.96px;
-    stroke-dashoffset: 463.96px;
-    animation: line-anim 2s ease forwards;
-}
-
-#Logo path:nth-child(2) {
-    stroke-dasharray: 668.78px;
-    stroke-dashoffset: 668.78px;
-    animation: line-anim 2s ease forwards 0.3s;
-}
-
-#Logo path:nth-child(3) {
-    stroke-dasharray: 239.8px;
-    stroke-dashoffset: 239.8px;
-    animation: line-anim 2s ease forwards 0.6s;
-}
-
-#Logo path:nth-child(4) {
-    stroke-dasharray: 239.32px;
-    stroke-dashoffset: 239.32px;
-    animation: line-anim 2s ease forwards 0.9;
-}
-
-@keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes fill {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: white;
-    }
-}
-
-
-/*Navigtionsbar and Burger-menu*/
-
-nav {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: none;
-}
-
-.nav-ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 0;
-    list-style-type: none;
-    width: 95%;
-}
-
-.nav-ul li a {
-    display: inline-block;
-    padding: 0.5em;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: #FCFCFC;
-    text-decoration: none;
-    width: 100%;
-    font-size: 30px;
-}
-
-nav a:hover,
-nav a:focus {
-    color: aqua;
-    text-decoration: underline;
-}
-
-.home {
-    float: left;
-}
-
-.hamburger {
-    border: 0;
-    color: #fcfcfc;
-    cursor: pointer;
-    font-size: 20px;
-    display: none;
-    background-color: transparent;
-}
-
-.home {
-    color: #fcfcfc;
-    cursor: pointer;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
-
-/*This is my flexboxes*/
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    text-align: center;
-    justify-content: center;
-}
-
-.flex-item-left {
-    padding: 10px;
-    margin: 10px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background-color: white;
-    flex: 50%;
-    border-radius: 20px;
-}
-
-.flex-item-right {
-    margin: 10px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background-color: white;
-    padding: 10px;
-    flex: 50%;
-    border-radius: 20px;
-}
-
-.figure {
-    display: flex;
-    flex-direction: row;
-    flex: 50%;
-}
-
-
-/*Typografi*/
-
-h3 {
-    font-size: 20px;
-    margin-top: 0em
-}
-
-figcaption {
-    background-color: none;
-    color: black;
-    font-style: italic;
-    padding: 2px;
-    text-align: center;
-    display: flex-end;
-}
-
-article p {
-    text-align: left;
-    font-size: 2.2vw;
-}
-
-.info {
-    font-size: 4.2vw;
-}
-
-span {
-    font-weight: bold;
-}
-
-
-/*Images*/
-
-.img-responsive {
-    width: 20%;
-    height: 20%;
-    text-align: left;
-    flex: 30%;
-    float: left;
-    border-radius: 10px
-}
-
-.portrait {
-    display: flex;
-    flex-direction: column;
-    height: 100%
-}
-
-.icons {
-    width: 20%;
-    height: 20%;
-}
-
-.comp {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-}
-
-
-/*Other tags*/
-
-meter {
-    width: 15rem;
-}
-
-@media (min-width: 768px) {
-    .flex-container {
-        flex-direction: row;
-    }
-    .img-responsive {
-        width: 40%;
-        height: 100%;
-        max-height: 150px;
-    }
-    h1 {
-        font-size: 32px;
-    }
-    .icons {
-        width: 15%;
-        height: 35%;
-    }
-    .info {
-        font-size: 0.7vw;
-        margin-top: 1.5rem;
-    }
-    .flex-item-left {
-        margin-left: 80px;
-        margin-right: 40px;
-        margin-top: 30px;
-        max-width: 400px;
-    }
-    .flex-item-right {
-        margin-left: 40px;
-        margin-right: 80px;
-        margin-top: 30px;
-        max-width: 400px;
-        font-size: 18px;
-    }
-    .video {
-        max-width: 500px;
-        min-height: 300px;
-    }
-    .video h1 {
-        font-size: 32px
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .nav-ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-    }
-    .nav-ul.show {
-        display: flex;
-    }
-    .hamburger {
-        display: block;
-    }
-    article p {
-        font-size: 3.5vw;
-    }
-    h1 {
-        font-size: 4vw;
-    }
-}
+                    * {
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        background-color: #02111B;
+                        width: 100%;
+                        height: 100vw;
+                    }
+                    
+                    h1 {
+                        color: black;
+                        /* padding-left: 1rem; */
+                        margin-top: 5px;
+                        font-size: 3vw;
+                    }
+                    
+                    #Logo {
+                        display: flex;
+                        animation: fill 0.5s ease forwards 3.5s;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    
+                    #Logo path:nth-child(1) {
+                        stroke-dasharray: 463.96px;
+                        stroke-dashoffset: 463.96px;
+                        animation: line-anim 2s ease forwards;
+                    }
+                    
+                    #Logo path:nth-child(2) {
+                        stroke-dasharray: 668.78px;
+                        stroke-dashoffset: 668.78px;
+                        animation: line-anim 2s ease forwards 0.3s;
+                    }
+                    
+                    #Logo path:nth-child(3) {
+                        stroke-dasharray: 239.8px;
+                        stroke-dashoffset: 239.8px;
+                        animation: line-anim 2s ease forwards 0.6s;
+                    }
+                    
+                    #Logo path:nth-child(4) {
+                        stroke-dasharray: 239.32px;
+                        stroke-dashoffset: 239.32px;
+                        animation: line-anim 2s ease forwards 0.9;
+                    }
+                    
+                    @keyframes line-anim {
+                        to {
+                            stroke-dashoffset: 0;
+                        }
+                    }
+                    
+                    @keyframes fill {
+                        from {
+                            fill: transparent;
+                        }
+                        to {
+                            fill: white;
+                        }
+                    }
+                    /*Navigtionsbar and Burger-menu*/
+                    
+                    nav {
+                        display: flex;
+                        align-items: center;
+                        padding: 15px;
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                        background-color: none;
+                    }
+                    
+                    .nav-ul {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: left;
+                        padding: 0;
+                        list-style-type: none;
+                        width: 95%;
+                    }
+                    
+                    .nav-ul li a {
+                        display: inline-block;
+                        padding: 0.5em;
+                        padding-right: 2rem;
+                        padding-left: 2rem;
+                        color: #FCFCFC;
+                        text-decoration: none;
+                        width: 100%;
+                        font-size: 30px;
+                    }
+                    
+                    nav a:hover,
+                    nav a:focus {
+                        color: aqua;
+                        text-decoration: underline;
+                    }
+                    
+                    .home {
+                        float: left;
+                    }
+                    
+                    .hamburger {
+                        border: 0;
+                        color: #fcfcfc;
+                        cursor: pointer;
+                        font-size: 20px;
+                        display: none;
+                        background-color: transparent;
+                    }
+                    
+                    .home {
+                        color: #fcfcfc;
+                        cursor: pointer;
+                    }
+                    
+                    .hamburger:focus {
+                        outline: none;
+                    }
+                    /*This is my flexboxes*/
+                    
+                    .flex-container {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 24px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    
+                    .flex-item-left {
+                        padding: 10px;
+                        margin: 10px;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        background-color: white;
+                        flex: 50%;
+                        border-radius: 20px;
+                    }
+                    
+                    .flex-item-right {
+                        margin: 10px;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        background-color: white;
+                        padding: 10px;
+                        flex: 50%;
+                        border-radius: 20px;
+                    }
+                    
+                    .figure {
+                        display: flex;
+                        flex-direction: row;
+                        flex: 50%;
+                    }
+                    /*Typografi*/
+                    
+                    h3 {
+                        font-size: 20px;
+                        margin-top: 0em
+                    }
+                    
+                    figcaption {
+                        background-color: none;
+                        color: black;
+                        font-style: italic;
+                        padding: 2px;
+                        text-align: center;
+                        display: flex-end;
+                    }
+                    
+                    article p {
+                        text-align: left;
+                        font-size: 2.2vw;
+                    }
+                    
+                    .info {
+                        font-size: 4.2vw;
+                    }
+                    
+                    span {
+                        font-weight: bold;
+                    }
+                    /*Images*/
+                    
+                    .img-responsive {
+                        width: 20%;
+                        height: 20%;
+                        text-align: left;
+                        flex: 30%;
+                        float: left;
+                        border-radius: 10px
+                    }
+                    
+                    .portrait {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%
+                    }
+                    
+                    .icons {
+                        width: 20%;
+                        height: 20%;
+                    }
+                    
+                    .comp {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2rem;
+                    }
+                    /*Other tags*/
+                    
+                    meter {
+                        width: 15rem;
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .flex-container {
+                            flex-direction: row;
+                        }
+                        .img-responsive {
+                            width: 40%;
+                            height: 100%;
+                            max-height: 150px;
+                        }
+                        h1 {
+                            font-size: 32px;
+                        }
+                        .icons {
+                            width: 15%;
+                            height: 35%;
+                        }
+                        .info {
+                            font-size: 0.7vw;
+                            margin-top: 1.5rem;
+                        }
+                        .flex-item-left {
+                            margin-left: 80px;
+                            margin-right: 40px;
+                            margin-top: 30px;
+                            max-width: 800px;
+                        }
+                        .flex-item-right {
+                            margin-left: 40px;
+                            margin-right: 80px;
+                            margin-top: 30px;
+                            max-width: 250px;
+                            font-size: 18px;
+                            flex: 70%;
+                        }
+                        .video {
+                            max-width: 500px;
+                            min-height: 300px;
+                        }
+                        .video h1 {
+                            font-size: 32px
+                        }
+                        .flex-container.flex-item-lef,
+                        .img-responsive,
+                        .portrait {
+                            display: none;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 767px) {
+                        .nav-ul {
+                            display: none;
+                            width: 100%;
+                            flex-direction: column;
+                        }
+                        .nav-ul.show {
+                            display: flex;
+                        }
+                        .hamburger {
+                            display: block;
+                        }
+                        article p {
+                            font-size: 3.5vw;
+                        }
+                        h1 {
+                            font-size: 4vw;
+                        }
+                    }
