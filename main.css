@@ -198,6 +198,15 @@
                         float: left;
                         border-radius: 10px
                     }
+
+                    .img-responsive-hjemmesider {
+                        width: 20%;
+                        height: 20%;
+                        text-align: left;
+                        flex: 30%;
+                        float: left;
+                        border-radius: 10px
+                    }
                     
                     .img-responsive-hjemmesider {
                         width: 20%;
@@ -229,6 +238,17 @@
                     meter {
                         width: 90%;
                         max-width: 20rem;
+                    }
+
+                    .pc{
+                        display: none;
+                    }
+
+                    footer{
+                        display: flex;
+                        justify-content: center;
+                        max-width:400px;
+                        margin-top:30px;
                     }
                     
                     .pc {
@@ -320,6 +340,8 @@
                             font-size: 1.5vw;
                             margin-top: 1.5rem;
                         }
+
+                        
                         .flex-item-left {
                             margin-left: 80px;
                             margin-right: 40px;
