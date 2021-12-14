@@ -5,9 +5,8 @@
                     
                     body {
                         background-color: #02111B;
-                        width: 100%; 
+                        width: 100%;
                         background-image: url(img/PS_Symbols.png);
-                        
                     }
                     
                     h1 {
@@ -247,16 +246,16 @@
                         width: 90%;
                         max-width: 20rem;
                     }
-
-                    .pc{
+                    
+                    .pc {
                         display: none;
                     }
-
-                    footer{
+                    
+                    footer {
                         display: flex;
                         justify-content: center;
-                        max-width:400px;
-                        margin-top:30px;
+                        max-width: 400px;
+                        margin-top: 30px;
                     }
                     
                     .pc {
@@ -284,7 +283,7 @@
                     .flex-item-left.box-other {
                         display: flex;
                         flex-direction: row;
-                        margin-left:10%;
+                        margin-left: 10%;
                         max-width: 80%;
                         min-height: 30px;
                     }
@@ -295,7 +294,7 @@
                         font-size: 24px;
                         text-align: center;
                         justify-content: flex-start;
-                        max-width:650px;
+                        max-width: 650px;
                     }
                     
                     .other {
@@ -313,7 +312,10 @@
                         font-size: 1.5vw;
                     }
                     
-                    
+                    iframe {
+                        width: 70%;
+                        height: 65%
+                    }
                     
                     .andre {
                         display: flex;
@@ -384,8 +386,6 @@
                             margin-top: 100px;
                             max-width: 1000px;
                         }
-
-                        
                         /*Denne class bliver gemt når størrelsen er lavere end 768px */
                         .mobile {
                             display: none;
