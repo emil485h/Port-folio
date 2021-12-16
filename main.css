@@ -1,435 +1,454 @@
-                    * {
-                        margin: 0 auto;
-                        box-sizing: border-box;
-                    }
-                    
-                    body {
-                        background-color: #02111B;
-                        width: 100%;
-                        background-image: url(img/PS_Symbols.png);
-                    }
-                    
-                    h1 {
-                        color: black;
-                        /* padding-left: 1rem; */
-                        margin-top: 5px;
-                        font-size: 3vw;
-                    }
-                    
-                    #Logo {
-                        display: flex;
-                        animation: fill 0.5s ease forwards 3.5s;
-                        margin-top: 20px;
-                        margin-bottom: 20px;
-                    }
-                    
-                    #Logo path:nth-child(1) {
-                        stroke-dasharray: 463.96px;
-                        stroke-dashoffset: 463.96px;
-                        animation: line-anim 2s ease forwards;
-                    }
-                    
-                    #Logo path:nth-child(2) {
-                        stroke-dasharray: 668.78px;
-                        stroke-dashoffset: 668.78px;
-                        animation: line-anim 2s ease forwards 0.3s;
-                    }
-                    
-                    #Logo path:nth-child(3) {
-                        stroke-dasharray: 239.8px;
-                        stroke-dashoffset: 239.8px;
-                        animation: line-anim 2s ease forwards 0.6s;
-                    }
-                    
-                    #Logo path:nth-child(4) {
-                        stroke-dasharray: 239.32px;
-                        stroke-dashoffset: 239.32px;
-                        animation: line-anim 2s ease forwards 0.9;
-                    }
-                    
-                    @keyframes line-anim {
-                        to {
-                            stroke-dashoffset: 0;
-                        }
-                    }
-                    
-                    @keyframes fill {
-                        from {
-                            fill: transparent;
-                        }
-                        to {
-                            fill: white;
-                        }
-                    }
-                    /*Navigtionsbar and Burger-menu*/
-                    
-                    nav {
-                        display: flex;
-                        align-items: center;
-                        padding: 15px;
-                        justify-content: space-evenly;
-                        flex-wrap: wrap;
-                        background-color: none;
-                    }
-                    
-                    .nav-ul {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: left;
-                        padding: 0;
-                        list-style-type: none;
-                        width: 95%;
-                    }
-                    
-                    .nav-ul li a {
-                        display: inline-block;
-                        padding: 0.5em;
-                        padding-right: 2rem;
-                        padding-left: 2rem;
-                        color: #FCFCFC;
-                        text-decoration: none;
-                        width: 100%;
-                        font-size: 30px;
-                    }
-                    
-                    nav a:hover,
-                    nav a:focus {
-                        color: aqua;
-                        text-decoration: underline;
-                    }
-                    
-                    .home {
-                        float: left;
-                    }
-                    
-                    .hamburger {
-                        border: 0;
-                        color: #fcfcfc;
-                        cursor: pointer;
-                        font-size: 20px;
-                        display: none;
-                        background-color: transparent;
-                    }
-                    
-                    .home {
-                        color: #fcfcfc;
-                        cursor: pointer;
-                    }
-                    
-                    .home:hover {
-                        color: aqua;
-                    }
-                    
-                    .hamburger:focus {
-                        outline: none;
-                    }
-                    /*This is my flexboxes*/
-                    
-                    .flex-container {
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 24px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    
-                    .flex-item-left {
-                        padding: 10px;
-                        margin: 10px;
-                        max-width: 650px;
-                        margin-left: 2rem;
-                        margin-right: 2rem;
-                        background-color: rgba(255, 255, 255, 0.750);
-                        flex: 50%;
-                        border-radius: 20px;
-                        border: 2px solid black;
-                        -webkit-box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
-                        box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
-                    }
-                    
-                    .flex-item-right {
-                        margin: 10px;
-                        margin-left: 2rem;
-                        margin-right: 2rem;
-                        max-width: 650px;
-                        background-color: rgba(255, 255, 255, 0.750);
-                        padding: 10px;
-                        flex: 50%;
-                        border-radius: 20px;
-                        border: 2px solid black;
-                        -webkit-box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
-                        box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
-                    }
-                    
-                    .figure {
-                        display: flex;
-                        flex-direction: row;
-                        flex: 50%;
-                    }
-                    /*Typografi*/
-                    
-                    h3 {
-                        font-size: 20px;
-                        margin-top: 0em
-                    }
-                    
-                    figcaption {
-                        background-color: none;
-                        color: black;
-                        font-style: italic;
-                        padding: 2px;
-                        text-align: center;
-                        display: flex-end;
-                    }
-                    
-                    article p {
-                        text-align: left;
-                        font-size: 2.2vw;
-                    }
-                    
-                    .info {
-                        font-size: 4.2vw;
-                    }
-                    
-                    span {
-                        font-weight: bold;
-                    }
-                    /*Images*/
-                    
-                    .img-responsive {
-                        width: 20%;
-                        height: 20%;
-                        text-align: left;
-                        flex: 30%;
-                        float: left;
-                        border-radius: 10px
-                    }
-                    
-                    .img-responsive-hjemmesider {
-                        width: 20%;
-                        height: 20%;
-                        text-align: left;
-                        flex: 30%;
-                        float: left;
-                        border-radius: 10px
-                    }
-                    
-                    .img-responsive-hjemmesider {
-                        width: 20%;
-                        height: 20%;
-                        text-align: left;
-                        flex: 30%;
-                        float: left;
-                        border-radius: 10px
-                    }
-                    
-                    .portrait {
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%
-                    }
-                    
-                    .icons {
-                        width: 20%;
-                        height: 20%;
-                    }
-                    
-                    .comp {
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 2rem;
-                    }
-                    /*Other tags*/
-                    
-                    meter {
-                        width: 90%;
-                        max-width: 20rem;
-                    }
-                    
-                    .pc {
-                        display: none;
-                    }
-                    
-                    footer {
-                        display: flex;
-                        justify-content: center;
-                        max-width: 400px;
-                        margin-top: 30px;
-                    }
-                    
-                    .pc {
-                        display: none;
-                    }
-                    
-                    .pc {
-                        display: none;
-                    }
-                    
-                    footer {
-                        display: flex;
-                        justify-content: center;
-                        max-width: 500px;
-                        margin-top: 30px;
-                    }
-                    
-                    .footer-icon {
-                        width: 90%;
-                        display: flex;
-                        margin-left: 10px;
-                    }
-                    /*andre siden*/
-                    
-                    .flex-item-left.box-other {
-                        display: flex;
-                        flex-direction: row;
-                        margin-left: 10%;
-                        max-width: 80%;
-                        min-height: 30px;
-                    }
-                    
-                    .flex-container-other {
-                        display: flex;
-                        flex-direction: row;
-                        font-size: 24px;
-                        text-align: center;
-                        justify-content: flex-start;
-                        max-width: 650px;
-                    }
-                    
-                    .other {
-                        width: 15%;
-                        height: 15%
-                    }
-                    
-                    img.other {
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-                    
-                    .text-other {
-                        margin-left: 20px;
-                        font-size: 1.5vw;
-                    }
-                    
-                    iframe {
-                        width: 70%;
-                        height: 65%
-                    }
-                    
-                    .andre {
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-                    
-                    @media (min-width: 768px) {
-                        .flex-container {
-                            flex-direction: row;
-                        }
-                        .img-responsive {
-                            width: auto;
-                            height: auto;
-                            max-height: 150px;
-                        }
-                        .img-responsive-hjemmesider {
-                            width: auto;
-                            height: auto;
-                            max-height: 150px;
-                        }
-                        h1 {
-                            font-size: 32px;
-                            justify-content: center;
-                        }
-                        .icons {
-                            width: 15%;
-                            height: auto;
-                            display: flex;
-                            flex: 30%;
-                        }
-                        .comp {
-                            flex-direction: column;
-                        }
-                        .info {
-                            font-size: 1.5vw;
-                            margin-top: 1.5rem;
-                        }
-                        .flex-item-left {
-                            margin-left: 80px;
-                            margin-right: 40px;
-                            margin-top: 30px;
-                            min-height: 285px;
-                        }
-                        .flex-item-right {
-                            margin-left: 40px;
-                            margin-right: 80px;
-                            margin-top: 30px;
-                            max-width: 250px;
-                            min-width: 250px;
-                            font-size: 18px;
-                            flex: 70%;
-                        }
-                        .video {
-                            max-width: 500px;
-                            min-height: 500px;
-                        }
-                        .video h1 {
-                            font-size: 32px
-                        }
-                        .flex-container.flex-item-lef,
-                        .img-responsive,
-                        .portrait {
-                            display: none;
-                        }
-                        .box-icons {
-                            display: flex;
-                            margin-top: 100px;
-                            max-width: 1000px;
-                        }
-                        /*Denne class bliver gemt når størrelsen er lavere end 768px */
-                        .mobile {
-                            display: none;
-                        }
-                        /*denne class bliver vist når størrelsen er minimum 768px*/
-                        .pc {
-                            text-align: center;
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        .pc-info {
-                            max-height: 200px;
-                            flex-direction: column;
-                        }
-                        .pc-contact {
-                            margin-left: -10px;
-                            margin-bottom: -60px;
-                        }
-                        .hjemmesider {
-                            max-width: 500px;
-                            min-width: 350px;
-                            min-height: 10px;
-                        }
-                        div.flex-item-right.pc.pc-info.pc-contact {
-                            margin-top: 200px;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 767px) {
-                        .nav-ul {
-                            display: none;
-                            width: 100%;
-                            flex-direction: column;
-                        }
-                        .nav-ul.show {
-                            display: flex;
-                        }
-                        .hamburger {
-                            display: block;
-                        }
-                        article p {
-                            font-size: 3.5vw;
-                        }
-                        h1 {
-                            font-size: 4vw;
-                        }
-                    }
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    background-color: #02111B;
+    width: 100%;
+    background-image: url(img/PS_Symbols.png);
+}
+
+h1 {
+    color: black;
+    /* padding-left: 1rem; */
+    margin-top: 5px;
+    font-size: 3vw;
+}
+
+
+/*animeret emil tekst*/
+
+#Logo {
+    display: flex;
+    animation: fill 0.5s ease forwards 3.5s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Logo path:nth-child(1) {
+    stroke-dasharray: 463.96px;
+    stroke-dashoffset: 463.96px;
+    animation: line-anim 2s ease forwards;
+}
+
+#Logo path:nth-child(2) {
+    stroke-dasharray: 668.78px;
+    stroke-dashoffset: 668.78px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#Logo path:nth-child(3) {
+    stroke-dasharray: 239.8px;
+    stroke-dashoffset: 239.8px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#Logo path:nth-child(4) {
+    stroke-dasharray: 239.32px;
+    stroke-dashoffset: 239.32px;
+    animation: line-anim 2s ease forwards 0.9;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+
+/*Navigtionsbar and Burger-menu*/
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: none;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+    width: 95%;
+}
+
+.nav-ul li a {
+    display: inline-block;
+    padding: 0.5em;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: #FCFCFC;
+    text-decoration: none;
+    width: 100%;
+    font-size: 30px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.home {
+    float: left;
+}
+
+.hamburger {
+    border: 0;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    background-color: transparent;
+}
+
+.home {
+    color: #fcfcfc;
+    cursor: pointer;
+}
+
+.home:hover {
+    color: aqua;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+
+/*Flexboxes*/
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-item-left {
+    padding: 10px;
+    margin: 10px;
+    max-width: 650px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgba(255, 255, 255, 0.750);
+    flex: 50%;
+    border-radius: 20px;
+    border: 2px solid black;
+    -webkit-box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
+}
+
+.flex-item-right {
+    margin: 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 650px;
+    background-color: rgba(255, 255, 255, 0.750);
+    padding: 10px;
+    flex: 50%;
+    border-radius: 20px;
+    border: 2px solid black;
+    -webkit-box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 6px 15px 5px rgba(255, 255, 255, 0.2);
+}
+
+.figure {
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+}
+
+
+/*Typografi*/
+
+h3 {
+    font-size: 20px;
+    margin-top: 0em
+}
+
+figcaption {
+    background-color: none;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    display: flex-end;
+}
+
+article p {
+    text-align: left;
+    font-size: 2.2vw;
+}
+
+.info {
+    font-size: 4.2vw;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/*Images*/
+
+.img-responsive {
+    width: 20%;
+    height: 20%;
+    text-align: left;
+    flex: 30%;
+    float: left;
+    border-radius: 10px
+}
+
+.img-responsive-hjemmesider {
+    width: 20%;
+    height: 20%;
+    text-align: left;
+    flex: 30%;
+    float: left;
+    border-radius: 10px
+}
+
+.img-responsive-hjemmesider {
+    width: 20%;
+    height: 20%;
+    text-align: left;
+    flex: 30%;
+    float: left;
+    border-radius: 10px
+}
+
+.portrait {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.icons {
+    width: 20%;
+    height: 20%;
+}
+
+.comp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+
+/*Other tags*/
+
+meter {
+    width: 90%;
+    max-width: 20rem;
+}
+
+.pc {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.pc {
+    display: none;
+}
+
+.pc {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.footer-icon {
+    width: 90%;
+    display: flex;
+    margin-left: 10px;
+}
+
+
+/*andre siden*/
+
+.flex-item-left.box-other {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    max-width: 80%;
+    min-height: 30px;
+}
+
+.flex-container-other {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    text-align: center;
+    justify-content: flex-start;
+    max-width: 650px;
+}
+
+.other {
+    width: 15%;
+    height: 15%
+}
+
+img.other {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text-other {
+    margin-left: 20px;
+    font-size: 1.5vw;
+}
+
+iframe {
+    width: 70%;
+    height: 65%
+}
+
+.andre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .img-responsive {
+        width: auto;
+        height: auto;
+        max-height: 150px;
+    }
+    .img-responsive-hjemmesider {
+        width: auto;
+        height: auto;
+        max-height: 150px;
+    }
+    h1 {
+        font-size: 32px;
+        justify-content: center;
+    }
+    .icons {
+        width: 15%;
+        height: auto;
+        display: flex;
+        flex: 30%;
+    }
+    .comp {
+        flex-direction: column;
+    }
+    .info {
+        font-size: 1.5vw;
+        margin-top: 1.5rem;
+    }
+    .flex-item-left {
+        margin-left: 80px;
+        margin-right: 40px;
+        margin-top: 30px;
+        min-height: 285px;
+    }
+    .flex-item-right {
+        margin-left: 40px;
+        margin-right: 80px;
+        margin-top: 30px;
+        max-width: 250px;
+        min-width: 250px;
+        font-size: 18px;
+        flex: 70%;
+    }
+    .video {
+        max-width: 500px;
+        min-height: 500px;
+    }
+    .video h1 {
+        font-size: 32px
+    }
+    .flex-container.flex-item-lef,
+    .img-responsive,
+    .portrait {
+        display: none;
+    }
+    .box-icons {
+        display: flex;
+        margin-top: 100px;
+        max-width: 1000px;
+    }
+    /*Denne class bliver gemt når størrelsen er lavere end 768px */
+    .mobile {
+        display: none;
+    }
+    /*denne class bliver vist når størrelsen er minimum 768px*/
+    .pc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .pc-info {
+        max-height: 200px;
+        flex-direction: column;
+    }
+    .pc-contact {
+        margin-left: -10px;
+        margin-bottom: -60px;
+    }
+    .hjemmesider {
+        max-width: 500px;
+        min-width: 350px;
+        min-height: 10px;
+    }
+    div.flex-item-right.pc.pc-info.pc-contact {
+        margin-top: 200px;
+    }
+}
+
+
+/*Dette er min burger menu der bliver vist frem når skærm størrelsen er lille nok */
+
+@media screen and (max-width: 767px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+    article p {
+        font-size: 3.5vw;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+}
