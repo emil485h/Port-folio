@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="description" content="Bambu er et firma beliggende i Danmark, der sælger bæredygtig børnebestik og service.">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html"><img src="img/LOGO.png" alt="Logo" class="logo"></a>
+        </div>
+        <h1 class="brand-name mobile">Bambu</h1>
+        <div class="nav-desktop">
+            <a href="index.html"><img src="img/logo-name.png" alt="Logo" class="header-nav">
+            </a>
+            <div class="navbar-links pc">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="produktside.html" class="bold">Produkter</a></li>
+                    <li><a class="rød" href="#">Om os</a></li>
+                    <li><a class="rød" href="#">Vejledning</a></li>
+                    <li><a class="rød" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" style="color: red;"></i>
+            <i class="fa-solid fa-user" style="color: red;"></i>
+            <a href="indkøbskurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- <a onclick="openMenu()"> 
+                <i class="fa-solid fa-bars"></i></a> -->
+            <a href="#" class="toggle-button mobile" onclick="openMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="navbar-linksm">
+        <ul id="navbar-li">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="produktside.html">Produkter</a></li>
+            <li><a class="rød" href="#">Om os</a></li>
+            <li><a class="rød" href="#">vejledning</a></li>
+            <li><a class="rød" href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <!-- onmouseover="this.src='img/kanin-orange-frugt.jpg';" onmouseout="this.src='img/kaninorange.JPG';" -->
+    <header class="product-push pc">Hej</header>
+
+    <section class="container-box push">
+        <div class="box">
+            <img id="img-kanin" src='img/kaninorange.JPG' alt="Tallerken uden frugt" />
+            <a href="detaljeret.html"><img class="img-kanin-frugt" src='img/kanin-orange-frugt.JPG' alt="Tallerken med frugt" /></a>
+            <h3>Kanin Tallerken</h3>
+            <p>Fås i flere farver</p>
+            <h4>199,95</h4>
+            <a href="detaljeret.html" class="btn-primary">Se mere</a>
+        </div>
+
+        <div class="box">
+            <img src="img/skaal.png" alt="Skål uden frugt">
+            <img class="img-kanin-frugt" src='img/skaal-frugt.JPG' alt="skål med frugt" />
+            <h3>Skål</h3>
+            <p>Fås i flere farver</p>
+            <h4>199,95</h4>
+            <a href="#" class="btn-primary red">Se mere</a>
+        </div>
+        <div class="box">
+            <img src="img/raevskegroen.JPG" alt="Tallerken uden frugt">
+            <img class="img-kanin-frugt" src='img/raev-frugt.JPG' alt="Tallerken med frugt" />
+            <h3>Ræv Tallerken</h3>
+            <p>Fås i flere farver</p>
+            <h4>199,95</h4>
+            <a href="#" class="btn-primary red">Se mere</a>
+        </div>
+        <div class="box">
+            <img src="img/faarroed.JPG" alt="Tallerken uden frugt">
+            <img class="img-kanin-frugt" src='img/faar-frugt.JPG' alt="tallerken med frugt" />
+
+            <h3>Får Tallerken</h3>
+            <p>Fås i flere farver</p>
+            <h4>199,95</h4>
+            <a href="#" class="btn-primary red">Se mere</a>
+
+        </div>
+
+        <div class="box">
+            <img src="img/uglegul.JPG" alt="Tallerken uden frugt">
+            <img class="img-kanin-frugt" src='img/ugle-frugt.JPG' alt="Tallerken med frugt" />
+            <h3>Ugle Tallerken</h3>
+            <p>Fås i flere farver</p>
+            <h4>199,95</h4>
+            <a href="#" class="btn-primary red">Se mere</a>
+        </div>
+        <div class="box">
+            <img src="img/alle.png" alt="Tallerkener i et bundt">
+            <h3>Bland Selv Tallerkner</h3>
+            <p>Fås i flere farver</p>
+            <h4>199,95</h4>
+            <a href="#" class="btn-primary red">Se mere</a>
+        </div>
+
+
+    </section>
+
+
+    <section class="container-about mobile">
+        <h2>Har du husket din kokosolie?</h2>
+        <img src="img/olie.png" alt="Billede af Kokosolie">
+        <p>Gør holdbarheden længere ved at smøre dine babyprodukter ind i kokosolie én gang om måneden
+        </p>
+        <a href="#" class="btn-primary btn4">Tilføj</a>
+    </section>
+    <section class="container-box pc" id="about">
+        <div class="box box4">
+            <img src="img/olie.png" alt="Billede af kokosolie">
+
+        </div>
+
+        <div class="box box5">
+            <h2>Har du husket din kokosolie?</h2>
+            <p>Gør holdbarheden længere ved at smøre dine babyprodukter ind i kokosolie én gang om måneden</p>
+            <a href="#" class="btn-primary btn4 rød">Tilføj til kurv</a>
+        </div>
+
+
+
+    </section>
+
+
+    <footer>
+        <div class="brand-title-foot pc"><img src="img/LOGO.png" alt="Logo" class="logo-foot pc"></div>
+
+        <ul class="foot-webshop">
+            <li><h3 class="header-foot">Webshop</h3></li>
+            <li><a href="">Fragt og levering</a></li>
+            <li><a href="">Retur og ombytning</a></li>
+            <li><a href="">Reklamtion</a></li>
+            <li><a href="">Handelsbetingelser</a></li>
+            <li><a href="">Cookie politik</a></li>
+            <li><a href="">Persondatapolitik</a></li>
+        </ul>
+
+        <div class="SoMe-icons pc">
+            <h3>følg os på de sociale medier</h3>
+            <div class="SoMe">
+                <a href=""><i class="fa-brands fa-instagram fa-4x"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f fa-4x"></i></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <footer class="footer-copyright">
+        <a href=""><i class="fa-regular fa-copyright"><span id="copyright">Bambu 2022 </span></i></a>
+        <a class="pc" href="">Mail: Mikkel@bambu.dk</a>
+        <a class="pc" href="">Tlf: 31 70 55 55</a>
+        <a href="">CVR: 20 XX XX XX XX </a>
+        <a href=""><i><img class="Dankort" src="img/Icon-payment-dankort.png" alt="Dankort ikon"></i><i><img src="img/mobilepayLogo.png" id="mobilepay" alt="billede af mobilepay logo"></i> </a>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/648072ba1a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
