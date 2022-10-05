@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informationside</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="description" content="Bambu er et firma beliggende i Danmark, der sælger bæredygtig børnebestik og service.">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html"><img src="img/LOGO.png" alt="Logo" class="logo"></a>
+        </div>
+        <h1 class="brand-name mobile">Bambu</h1>
+        <div class="nav-desktop">
+            <img src="img/logo name.png" alt="Logo" class="header-nav"></img>
+            <div class="navbar-links pc">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="produktside.html">Produkter</a></li>
+                    <li><a class="rød" href="#">Om os</a></li>
+                    <li><a class="rød" href="#">Vejledning</a></li>
+                    <li><a class="rød" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass red"></i> >
+            <i class="fa-solid fa-user red"></i>
+            <a href="indkøbskurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- <a onclick="openMenu()"> 
+                <i class="fa-solid fa-bars"></i></a> -->
+            <a href="#" class="toggle-button mobile" onclick="openMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="navbar-linksm">
+        <ul id="navbar-li">
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Produkter</a></li>
+            <li><a class="rød" href="#">Om os</a></li>
+            <li><a class="rød" href="#">vejledning</a></li>
+            <li><a class="rød" href="#">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <header class="product-push pc"></header>
+    <div class="container-row">
+        <section class="section-formular">
+            <header>Kunde info</header>
+            <p>Har du allerede en konto? <a href="#">Log ind</a></p>
+
+            <label for="fname">Fulde navn</label>
+            <input type="text" id="fname">
+            <label for="street">Adresse</label>
+            <input type="text" id="street">
+            <label for="post">Postnummer</label>
+            <input type="text" id="post">
+            <label for="city">By</label>
+            <input type="text" id="city">
+            <label for="tlf">Tlf. nummer</label>
+            <input type="text" id="tlf">
+            <label for="country">Land</label>
+            <input type="text" id="country">
+            <label for="e-mail">E-mail adresse</label>
+            <input type="text" id="e-mail">
+            <label for="confirm">Bekræft E-mail</label>
+            <input type="text" id="confirm">
+
+        </section>
+
+        <section class="section-formular gls">
+            <img src="img/GLS_Logo_2021_RGB_GLSBlue.png" alt="Gls-logo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75431.52905120923!2d12.20376475290557!3d55.465712640476895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sda!2sdk!4v1654676308581!5m2!1sda!2sdk" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+    </div>
+    <div class="container-row">
+        <section class="section-formular payment">
+            <header>Betalingsmetoder</header>
+
+            <FORM>
+                <div>
+                    <INPUT TYPE="radio" NAME="Valg" VALUE="Valgmulighed 1">MobilePay<img src="img/MobilepayLogo.png">
+                </div>
+                <div>
+                    <INPUT TYPE="radio" NAME="Valg" VALUE="Valgmulighed 2"> Betalingskort
+                    <img src="img/Icon payment-dankort.png">
+                </div>
+            </FORM>
+
+        </section>
+
+        <section class="banner-payment">
+            <img src="img/skaal_frugt_blaa.png" alt="banner">
+            <h1>Lev bæredygtigt <br>køb bambus produkter</h1>
+
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="brand-title-foot pc"><img src="img/LOGO.png" alt="Logo" class="logo-foot pc"></div>
+
+        <ul class="foot-webshop">
+            <header class="header-foot">Webshop</header>
+            <li><a href="">Fragt og levering</a></li>
+            <li><a href="">Retur og ombytning</a></li>
+            <li><a href="">Reklamtion</a></li>
+            <li><a href="">Handelsbetingelser</a></li>
+            <li><a href="">Cookie politik</a></li>
+            <li><a href="">Persondatapolitik</a></li>
+        </ul>
+
+        <div class="SoMe-icons pc">
+            <header>følg os på de sociale medier</header>
+            <div class="SoMe">
+                <a href=""><i class="fa-brands fa-instagram fa-4x"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f fa-4x"></i></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <footer class="footer-copyright">
+        <a href=""><i class="fa-regular fa-copyright"><span id="copyright">Bambu 2022 </span></i></a>
+        <a class="pc" href="">Mail: Mikkel@bambu.dk</a>
+        <a class="pc" href="">Tlf: 31 70 55 55</a>
+        <a href="">CVR: 20 XX XX XX XX </a>
+        <a href=""><i class="fa-brands fa-cc-mastercard fa-2x pay"></i><i><img src="img/mobilepayLogo.png" id="mobilepay" alt=""></i> </a>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/648072ba1a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

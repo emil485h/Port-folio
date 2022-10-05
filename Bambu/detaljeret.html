@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="description" content="Bambu er et firma beliggende i Danmark, der sælger bæredygtig børnebestik og service.">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="#"><img src="img/LOGO.png" alt="Logo" class="logo"></a>
+        </div>
+        <h1 class="brand-name mobile">Bambu</h1>
+        <div class="nav-desktop">
+            <img src="img/logo name.png" alt="Logo" class="header-nav"></img>
+            <div class="navbar-links pc">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="produktside.html">Produkter</a></li>
+                    <li><a class="rød" href="#">Om os</a></li>
+                    <li><a class="rød" href="#">Vejledning</a></li>
+                    <li><a class="rød" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass red"></i> >
+            <i class="fa-solid fa-user red"></i>
+            <a href="indkøbskurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- <a onclick="openMenu()"> 
+                <i class="fa-solid fa-bars"></i></a> -->
+            <a href="#" class="toggle-button mobile" onclick="openMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="navbar-linksm">
+        <ul id="navbar-li">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="produktside.html">Produkter</a></li>
+            <li><a class="rød" href="#">Om os</a></li>
+            <li><a class="rød" href="#">vejledning</a></li>
+            <li><a class="rød" href="#">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <!-- Detaljeret produktside start -->
+    <header class="product-push pc">Hej</header>
+    <!-- Produkt billeder -->
+    <h2 class="title pc">Kanin tallerken</h2>
+    <section class="detalside">
+        <section class="productSection">
+            <h2 class="mobile">Kanin tallerken</h2>
+            <div class="productImg">
+                <i onclick="changeImg()" class="fa-solid fa-circle-chevron-left"></i>
+                <!-- <div id="products"> -->
+                <div id="productFront">
+                    <img class="product hide" src="img/kaningreen.png" alt="Kanintallerken">
+                    <img class="product valgt" src="img/kaninpink.png" alt="Kanintallerken">
+                    <img class="product hide" src="img/kaninblue.png" alt="Kanintallerken">
+                    <img class="product hide" src="img/kaninyellow.png" alt="Kanintallerken">
+                    <img class="product hide" src="img/kaninorange.png" alt="Kanintallerken">
+                    <img class="product hide" src="img/kaninsidegreen.png" alt="Kanintallerken fra siden">
+                    <img class="product valgt hide" src="img/kaninsidepink.png" alt="Kanintallerken fra siden">
+                    <img class="product hide" src="img/kaninsideblue.png" alt="Kanintallerken fra siden">
+                    <img class="product hide" src="img/kaninsideyellow.png" alt="Kanintallerken fra siden">
+                    <img class="product hide" src="img/kaninsideorange.png" alt="Kanintallerken fra siden">
+                </div>
+                <!-- <div id="productSide">
+
+                    </div> -->
+
+
+                <!-- </div> -->
+                <i onclick="changeImg()" class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+
+            <!-- Stor halvcirkel -->
+            <span id="dotLarge" class="lyserød"></span>
+
+            <!-- Små cirkler -->
+            <div class="smallDots">
+                <span onclick="colorGreen()" class="dot grøn"></span>
+                <span onclick="colorPink()" class="dot lyserød active"></span>
+                <span onclick="colorBlue()" class="dot blå"></span>
+                <span onclick="colorYellow()" class="dot gul"></span>
+                <span onclick="colorOrange()" class="dot orange"></span>
+            </div>
+        </section>
+
+        <!-- Beskrivelse -->
+        <section class="textbox kaninBe lyserød">
+            <h3>Beskrivelse</h3>
+            <p class="beskrivelse">Kanin spisesættet til dine børn er lavet af bæredygtigt bambus og er fri for kemikalier.
+                <br> <br>Den aftagelige silicone bund på tallerkenen fungere som en sugekop.
+                <br><br>Skeen er udstyret med silicone tip og bambus skaft. <br><br> Anbefales til børn i alderen 6mdr til 4år. </p>
+            <p class="vigtig">Tåler ikke opvaskemaskine, ovn eller mikroovn.</p>
+            <h4 class="pris">199,95DKK</h4>
+            <br>
+            <a href="#" class="btn-primary btn-tilf">Tilføj til kurv</a>
+        </section>
+    </section>
+
+    <!-- Forslag af andre produkter -->
+    <section class="persuasive">
+        <h3>Du vil måske også synes om</h3>
+        <div class="forslag">
+            <a href=""><img class="pforslag stor" src="img/bowlyellow.png" alt=""></a>
+            <a href=""><img class="pforslag" src="img/owlorange.png" alt=""></a>
+            <a href=""><img class="pforslag" src="img/foxorange.png" alt=""></a>
+        </div>
+    </section>
+
+    <section class="huskKokos">
+        <h2>Husk kokosolie</h2>
+
+        <!-- Stor kvart cirkel -->
+        <span id="dotLarge2" class="lyserød pc"></span>
+
+        <div class="olie">
+            <div class="olieCon">
+                <img class="kokosBillede" src="img/olie.png" alt="billede af kokosolie">
+            </div>
+            <section class="textbox lyserød">
+                <h3>Beskrivelse</h3>
+                <p class="beskrivelse bkokos">
+                    Ved at benytte kokosolie til børneservicen er du med til at gøre holdbarheden længere af dine produkter og holde på designets udseende. <br> Kokosolien er et naturprodukt som går ind og giver fugt til bambusfibrene og medvirker til
+                    at skåle, skeer og tallerkner ikke begynder at gå fra hinanden.
+                    <h4 class="pris">39,95DKK</h4>
+                    <br>
+                    <a href="#" class="btn-primary btn-tilf">Tilføj til kurv</a>
+            </section>
+            <img class="behandling pc" src="img/douglas-bagg-rxorF_Bs0ak-unsplash.jpg" alt="pårføring af kokosolie">
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Footer start -->
+    <footer>
+        <div class="brand-title-foot pc"><img src="img/LOGO.png" alt="Logo" class="logo-foot pc"></div>
+
+        <ul class="foot-webshop">
+            <header class="header-foot">Webshop</header>
+            <li><a href="">Fragt og levering</a></li>
+            <li><a href="">Retur og ombytning</a></li>
+            <li><a href="">Reklamtion</a></li>
+            <li><a href="">Handelsbetingelser</a></li>
+            <li><a href="">Cookie politik</a></li>
+            <li><a href="">Persondatapolitik</a></li>
+        </ul>
+
+        <div class="SoMe-icons pc">
+            <header>følg os på de sociale medier</header>
+            <div class="SoMe">
+                <a href=""><i class="fa-brands fa-instagram fa-4x"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f fa-4x"></i></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <footer class="footer-copyright">
+        <a href=""><i class="fa-regular fa-copyright"><span id="copyright">Bambu 2022 </span></i></a>
+        <a class="pc" href="">Mail: Mikkel@bambu.dk</a>
+        <a class="pc" href="">Tlf: 31 70 55 55</a>
+        <a href="">CVR: 20 XX XX XX XX </a>
+        <a href=""><i class="fa-brands fa-cc-mastercard fa-2x pay"></i><i><img src="img/mobilepayLogo.png" id="mobilepay" alt=""></i> </a>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/648072ba1a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

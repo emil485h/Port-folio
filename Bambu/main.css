@@ -1,0 +1,2088 @@
+:root {
+    --nav-color: #E2E6E5;
+    --font-black: #000000;
+    --font-white: #F1ECE8;
+    --hover-btn: #9eb28d;
+    --lyserød: #ffcae2;
+    --lyseblå: #D2EAFA;
+    --lysegrøn: #D0F4EA;
+    --gul: #F4FA9C;
+    --orange: #EB9C65;
+}
+
+@font-face {
+    font-family: 'Organo';
+    src: url('fonts/Organo.ttf') format('truetype');
+    src: url('fonts/Organo.woff2') format('woff2'), url('fonts/Organo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf') format('truetype');
+    src: url('fonts/Helvetica.woff2') format('woff2'), url('fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-Bold.ttf') format('truetype');
+    src: url('fonts/Helvetica-Bold.woff2') format('woff2'), url('fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-Oblique.ttf') format('truetype');
+    src: url('fonts/Helvetica-Oblique.woff2') format('woff2'), url('fonts/Helvetica-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
+    src: url('fonts/Helvetica-BoldOblique.woff2') format('woff2'), url('fonts/Helvetica-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* @font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-light.ttf') format('truetype');
+    src: url('fonts/helvetica-light.woff2') format('woff2'), url('fonts/helvetica-light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+/* @font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-compressed.otf') format('opentype');
+    src: url('fonts/helvetica-compressed.woff2') format('woff2'), url('fonts/helvetica-compressed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-rounded-bold.otf') format('opentype');
+    src: url('fonts/helvetica-rounded-bold.woff2') format('woff2'), url('fonts/helvetica-rounded-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Alt styling til det i navigationsbaren er her*/
+
+.navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: var(--nav-color);
+    color: white;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 300;
+    border-bottom: 1px solid black;
+}
+
+.brand-title {
+    width: 25%;
+}
+
+.logo {
+    height: 75px;
+    border: none !important;
+}
+
+.navbar-links {
+    display: none;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Helvetica";
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-linksm li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: var(--font-black);
+    padding: .7rem;
+    margin-top: 2rem;
+    font-size: 2.5vw;
+    white-space: nowrap;
+}
+
+.navbar-links ul li a.rød {
+    color: red;
+}
+
+.navbar-links li a:hover {
+    font-weight: bold;
+}
+
+.navbar-linksm {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: "Helvetica";
+}
+
+.navbar-linksm li a {
+    display: block;
+    text-decoration: none;
+    color: var(--font-black);
+    padding: .7rem;
+    margin-top: 2rem;
+    font-size: 2.5vw;
+    white-space: nowrap;
+}
+
+.navbar-linksm li a.rød {
+    color: red;
+}
+
+.navbar-linksm ul {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+
+/* .navbar-linksm.active {
+    display: flex;
+} */
+
+#navbar-li {
+    display: none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--font-black);
+    border-radius: 10px;
+}
+
+.icons {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.brand-name {
+    /* position: absolute; */
+    font-family: 'Organo';
+    color: var(--font-black);
+    font-size: 7vw;
+    margin: 0;
+}
+
+.icons i {
+    padding: .6rem;
+    font-size: 26px;
+    color: var(--font-black);
+    margin-top: 10px;
+}
+
+Header {
+    text-align: center;
+    font-size: 36px;
+    background-color: var(--nav-color)
+}
+
+.header-nav {
+    font-family: 'Organo';
+    width: 200px;
+    height: 100%;
+    margin-top: -70px;
+    z-index: 300;
+    font-size: 55px;
+    margin-bottom: 30px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-linksm ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding-top: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--nav-color);
+    width: 100%;
+}
+
+.navbar-linksm ul a {
+    margin-top: 0px;
+    border-bottom: 1px solid #000000;
+    font-size: 3vh;
+}
+
+
+/*Knapper*/
+
+.btn {
+    background-color: var(--nav-color);
+    color: var(--font-black);
+    border: 1px solid #000000;
+    border-radius: 100px;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    
+    cursor: pointer;
+    position: relative;
+    font-family: "Helvetica";
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+
+.btn-primary {
+    background-color: var(--nav-color);
+    color: var(--font-black);
+    border: 1px solid #000000;
+    border-radius: 100px;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    cursor: pointer;
+    font-family: "Helvetica";
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: -20px
+}
+
+
+/*Styling til forsiden*/
+
+.container-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.push {
+    margin-top: 120px;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+img {
+    border-radius: 10px;
+}
+
+.banner {
+    margin-top: 90px;
+    display: flex;
+    flex: 100;
+    width: 100%;
+    flex-direction: column;
+}
+
+.banner img {
+    border-radius: 0;
+}
+
+.banner h1 {
+    text-align: center;
+    color: #E2E6E5;
+    font-family: 'organo';
+    margin-top: -25%;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.box1 {
+    margin-top: 20px
+}
+
+.box1 img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box2 {
+    margin-top: 20px
+}
+
+.box2 img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: -70px 0;
+}
+
+.box3 img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box4 img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn1 {
+    position: relative;
+    margin-bottom: -3%;
+    width: 60%;
+    text-transform: uppercase;
+    font-family: "Helvetica";
+}
+
+.btn2 {
+    position: relative;
+    width: 60%;
+    text-transform: uppercase;
+    font-family: "Helvetica"
+}
+
+.btn3 {
+    position: relative;
+    width: 26.4%;
+    text-transform: uppercase;
+    font-family: "Helvetica"
+}
+
+.btn4 {
+    margin-top: 20px;
+    width: 26.4%;
+}
+
+.box {
+    float: left;
+    flex: 40%;
+    max-width: 40%;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    height: auto;
+    background-color: var(--nav-color);
+    border-radius: 10px;
+    line-height: 0.5;
+}
+
+.box3 {
+    margin-top: 30px;
+    max-height: 235px;
+    max-width: 85.88%;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box h3, .box h4, .box p {
+    text-align: center;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 85%;
+    border-radius: 10px;
+    background-color: var(--nav-color);
+    padding: 0 10px;
+}
+
+.container-about h2 {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.container-about img {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.container-box p {
+    margin-bottom: 20px;
+}
+
+.mobile {
+    display: flex;
+}
+
+.pc {
+    display: none;
+}
+
+
+/*Footer styling*/
+
+footer {
+    background-color: var(--nav-color);
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.foot-webshop {
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 3.3;
+    text-transform: uppercase;
+    padding: 0;
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.foot-webshop header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.foot-webshop li a {
+    text-decoration: none;
+    color: var(--font-black);
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-evenly;
+    height: 36px;
+    border-top: 1px solid var(--font-black);
+}
+
+.footer-copyright:nth-child(1) {
+    padding-top: 10px
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: var(--font-black);
+    font-size: 12px;
+    font-family: "Helvetica";
+    padding-top: 10px;
+    height: 24px;
+}
+
+#copyright {
+    font-family: "Helvetica";
+    padding-left: 3px;
+}
+
+.pay {
+    margin-top: -5px;
+}
+
+#mobilepay {
+    height: 25px;
+    width: auto;
+    padding-left: 3px;
+    position: absolute;
+    margin-top: -5px;
+    object-fit: cover;
+}
+
+.SoMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.banner {
+    width: 100%;
+}
+
+.mobile {
+    display: flex
+}
+
+.pc {
+    display: none;
+}
+
+.product-push {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#img-kanin-frugt {
+    margin-top: 0px;
+    opacity: 0;
+    width: 30%;
+    margin-left: -30%;
+    position: absolute;
+}
+
+#img-kanin-frugt:hover {
+    transition: .6s ease-in;
+    opacity: 1;
+}
+
+
+/* detaljeret side styling */
+
+
+/* farver */
+
+.grøn {
+    background-color: var(--lysegrøn);
+}
+
+.lyserød {
+    background-color: var(--lyserød);
+}
+
+.blå {
+    background-color: var(--lyseblå);
+}
+
+.gul {
+    background-color: var(--gul);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+
+/* farver slut */
+
+
+/* produkt del */
+
+.productSection {
+    width: 100vw;
+}
+
+.productSection h2 {
+    margin-top: 28vw;
+    margin-bottom: 0;
+    font-family: 'Organo';
+    font-size: 4.5vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.productImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3vh 0vh 3vh 0vh;
+    width: 100%;
+    height: 38vw;
+}
+
+
+/* .product{
+    display: flex;
+} */
+
+
+/* #products img{
+    width: 25vh;
+    height: 25vw;
+} */
+
+#productFront {
+    width: 25vh;
+}
+
+.product {
+    width: 25vh;
+}
+
+.valgt {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.productImg a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-circle-chevron-right,
+.fa-circle-chevron-left {
+    font-size: 4vh;
+    text-decoration: none;
+}
+
+
+/* Produkt del slut */
+
+
+/* Stor halvcirkel */
+
+section .dotLarge {
+    float: right;
+}
+
+#dotLarge {
+    height: 15vh;
+    width: 30vh;
+    border-top-right-radius: 30vh;
+    border-top-left-radius: 30vh;
+    transform: rotate(-90deg);
+    /* border-radius: 50%; */
+    display: inline-block;
+    position: absolute;
+    margin-top: -18vh;
+    /* margin-left: 30%; */
+    right: -7.5vh;
+    z-index: -10;
+}
+
+
+/* Stor halvcirkel slut */
+
+
+/* Små cirkler */
+
+.smallDots {
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh auto 2vh auto;
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/* border om aktiv cirkel */
+
+.active {
+    border: 1px solid black;
+}
+
+
+/* Små cirkler slut */
+
+
+/* Beskrivelse af produktet */
+
+.textbox {
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.textbox p {
+    margin-block-end: 0;
+    /* margin-block-start: 0; */
+}
+
+.kaninBe {
+    margin: 4vh 2vh 4vh 2vh;
+}
+
+.textbox h3 {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+.beskrivelse {
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vigtig {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.textbox h4 {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-style: italic;
+    text-align: end;
+    margin-bottom: 0;
+    margin-top: 2vh;
+}
+
+.btn-tilf {
+    margin-left: 79%;
+}
+
+.olie .btn-tilf {
+    margin-left: 44vw;
+}
+
+
+/* Beskrivelse af produktet slut*/
+
+
+/* Forslag af andre produkter */
+
+.persuasive {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    text-align: center;
+}
+
+.persuasive h3 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6vw;
+}
+
+.forslag {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: auto;
+}
+
+.forslag a {
+    width: 30vw;
+    /* align-items: center; */
+}
+
+.pforslag {
+    width: 23vw;
+}
+
+.stor {
+    width: 20vw;
+}
+
+
+/* Forslag af andre produkter slut*/
+
+
+/* Husk kokosolie */
+
+.huskKokos {
+    margin-top: 4vh;
+}
+
+.huskKokos h2 {
+    font-family: 'Organo';
+    font-size: 4vh;
+    text-align: center;
+}
+
+.olie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vh 2vh 4vh 2vh;
+}
+
+.kokosBillede {
+    width: 28vw;
+    height: 100%;
+}
+
+.olie section {
+    width: 60vw;
+}
+
+.olie section h3 {
+    font-size: 2vh;
+}
+
+.bkokos {
+    /* margin-block-start: 0; */
+    font-size: 1.5vh;
+}
+
+
+/* Husk kokosolie slut */
+
+
+/* Detaljeret side slut */
+
+
+/*indkøbskurv*/
+
+.boxkurv {
+    width: 86%;
+    padding: 0 20px 5px 20px;
+    background-color: #F1ECE8;
+    margin-top: 115px;
+    text-align: center;
+    font-size: 3vh;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.kaninimg {
+    width: 130px;
+    height: 100px;
+    margin-right: 185px;
+    margin-top: -20px;
+    margin-left: auto;
+}
+
+.boxkurv h3 {
+    padding-top: 20px;
+}
+
+.kaninpris {
+    padding-left: 192px;
+    margin-top: -60px;
+}
+
+.kanin {
+    text-align: left;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.farve {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.antal {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fjern {
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.linje {
+    width: 90%;
+}
+
+.kokosimg {
+    width: 100px;
+    height: 145px;
+    margin-right: 200px;
+}
+
+.prisolie {
+    margin-top: -80px;
+    padding-left: 192px;
+    position: absolute;
+}
+
+.Mængde {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kokos {
+    text-align: left;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.boxpris {
+    margin-top: auto;
+}
+
+.sub {
+    text-align: left;
+    font-size: 20px;
+}
+
+.prissub {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -37px;
+}
+
+.lev {
+    text-align: left;
+    font-size: 20px;
+}
+
+.prislev {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -37px;
+}
+
+.ialt {
+    font-size: 20px;
+    text-align: left;
+}
+
+.prisialt {
+    text-align: right;
+    font-size: 20px;
+}
+
+.prisknap {
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: -150px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.rabatkode {
+    text-align: left;
+    font-size: 3vh;
+}
+
+.rabatkasse {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.rabat {
+    margin-top: auto;
+}
+
+.tilf {
+    border-radius: 20px;
+    font-size: 20px;
+    margin-right: -120px;
+}
+
+.betaling {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.mpay {
+    margin-left: -120px;
+}
+
+.andre {
+    font-size: 30px;
+    text-align: center;
+}
+
+.andre1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mpay {
+    height: 49px;
+}
+
+
+/*Informationside styling*/
+
+.section-formular {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    background-color: #F1ECE8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.section-formular header {
+    background-color: #F1ECE8
+}
+
+.section-formular input {
+    height: 30px;
+    border: 1px solid black;
+}
+
+.payment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.gls {
+    margin-top: 30px;
+}
+
+.gls iframe {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.gls img {
+    width: 40%;
+    margin-top: 10px;
+}
+
+.payment {
+    margin-top: 30px;
+}
+
+.banner-payment {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.banner-payment img {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.banner-payment h1 {
+    text-align: center;
+    color: #E2E6E5;
+    font-family: 'organo';
+    font-size: 3vw;
+    margin-top: -35%;
+}
+
+form img {
+    width: 20%;
+    margin-left: 20px;
+}
+
+
+/*Kurv*/
+
+.section-beløb {
+    line-height: 1
+}
+
+.section-kurv p {
+    text-align: left;
+    margin: 0;
+}
+
+.kurv-img {
+    width: 40%;
+}
+
+.kurv-img2 {
+    width: 20%;
+}
+
+p.kurv-fjern {
+    text-align: right;
+}
+
+.beløb {
+    text-align: right;
+    margin-top: -40px;
+}
+
+hr {
+    color: black
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-column p {
+    display: flex;
+    flex: 45%;
+    width: 45%
+}
+
+.pull {
+    margin-top: 30px;
+}
+
+.rabat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rabat img {
+    width: 35%;
+}
+
+.købte-også {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.købte-også header {
+    background-color: transparent;
+}
+
+.købte-også div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.købte-også div img {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.red {
+    color: red;
+}
+
+@media (min-width: 800px) {
+    /*Navigationsbar styling til Mobil/Tablet*/
+    .navbar {
+        flex-direction: row;
+        align-items: space-between;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-bottom: none;
+        margin-top: -90px;
+        height: 130px;
+    }
+    .logo {
+        height: 110px
+    }
+    .brand-title-foot{
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .logo-foot {
+        height: 20vw
+    }
+    .brand-title {
+        width: 30vw
+    }
+    .toggle-button {
+        display: none;
+    }
+    .nav-desktop {
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        width: 30vw
+    }
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: 1rem 1rem 0rem 1rem;
+        margin-top: 0px;
+    }
+    .navbar-linksm {
+        display: none;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-linksm li a {
+        display: block;
+        text-decoration: none;
+        color: var(--font-black);
+        padding: .7rem;
+        margin-top: 2rem;
+        font-size: 2.5vw;
+        white-space: nowrap;
+    }
+    .navbar-linksm.active {
+        display: flex;
+    }
+    .icons {
+        display: flex;
+        width: 30vw;
+        justify-content: flex-end;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    /*Forside styling*/
+    #about {
+        margin-top: 25px;
+    }
+    .box {
+        max-width: 30%;
+        flex: 30%;
+    }
+    .box1 {
+        margin-top: 0px
+    }
+    .box2 {
+        margin-top: 0px
+    }
+    .box3 {
+        margin-top: 0px;
+        max-height: none;
+    }
+    .box4 {
+        max-height: 30vw;
+        max-width: 62.5%;
+    }
+    .box4 img {
+        object-fit: contain;
+    }
+    .box5 {
+        max-height: 30vw;
+        max-width: 30%;
+        font-family: "Helvetica";
+        line-height: 1;
+       
+    }
+    .box5 h2 {
+        font-size: 26px;
+        text-align: center;
+        font-family: 'organo';
+        padding: 0 5px;
+    }
+    .box5 p {
+        text-align: left;
+        padding: 0 15px;
+    }
+    .container-box {
+        margin-top: 90px;
+        flex-wrap: wrap;
+    }
+    .push {
+        margin-top: -40px;
+    }
+    .btn {
+        font-size: 1.5vw;
+        height: 50px;
+        width: 12vw;
+        margin-top: 0%;
+        font-weight: bold;
+        position: static;
+    }
+    .btn3 {
+        width: 60%
+    }
+    .btn4 {
+       
+        margin-top: 17vw;
+        width: 60%
+    }
+    /* footer slut */
+    /* detaljeret side start */
+    /* detaljeret side styling */
+    /* produkt del */
+    .detalside {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        align-items: center;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    .title {
+        margin-top: 4vw;
+        margin-bottom: 0;
+        font-family: 'Organo';
+        font-size: 6vw;
+        justify-content: center;
+    }
+    .productImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 3vh 0vh 3vh 0vh;
+        width: 100%;
+        height: 26vw;
+    }
+    /* Stor halvcirkel */
+    section .dotLarge {
+        float: right;
+    }
+    #dotLarge {
+        height: 22vh;
+        width: 44vh;
+        border-top-right-radius: 44vh;
+        border-top-left-radius: 44vh;
+        margin-top: -23.5vh;
+        right: -11vh;
+    }
+    /* Stor halvcirkel slut */
+    /* Små cirkler */
+    .smallDots {
+        width: 40vw;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .dot {
+        height: 50px;
+        width: 50px;
+    }
+    .kaninBe {
+        margin: 0vh 4vh 0vh 4vh;
+        width: 47%;
+    }
+    .persuasive {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    .persuasive h3 {
+        font-size: 3.5vw;
+        margin-top: 0;
+        margin-bottom: 2vw;
+    }
+    .huskKokos h2 {
+        font-size: 4.8vw;
+    }
+    .olie {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4vh 0vh 4vh 0vh;
+    }
+    .olie .btn-tilf {
+        margin-left: 78%;
+    }
+    .olieCon {
+        width: 25vw;
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+    .kokosBillede {
+        width: 13vw;
+        height: 100%;
+        margin-left: 4vw;
+    }
+    .olie section {
+        width: 30vw;
+    }
+    .behandling {
+        width: 25vw;
+        /* height: 32vw; */
+        height: 15vw;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    /* Stor halvcirkel */
+    section .dotLarge2 {
+        float: right;
+    }
+    #dotLarge2 {
+        width: 30vw;
+        height: 35vw;
+        border-top-right-radius: 100%;
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        margin-top: 5vw;
+        z-index: -10;
+        position: absolute;
+        /* height: 15vh;
+    width: 30vh;
+    border-top-right-radius: 30vh;
+    border-top-left-radius: 30vh; */
+        /* transform: rotate(-90deg); */
+        /* display: inline-block;
+
+    margin-top: -18vh;
+    right:-7.5vh;
+ */
+    }
+    /* Stor halvcirkel slut */
+    /* .productSection{
+    width: 100vw;
+
+.productImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3vh 0vh 3vh 0vh;
+    width: 100%;
+}
+.product {
+    width: 25vh;
+}
+.fa-circle-chevron-right, .fa-circle-chevron-left{
+    font-size: 4vh;
+} */
+    /* Produkt del slut */
+    /* Små cirkler */
+    /* .smallDots{
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh auto 2vh auto;
+}
+.dot {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+} */
+    /* border om aktiv cirkel */
+    /* .active{
+    border: 1px solid black;
+} */
+    /* Små cirkler slut */
+    /* Beskrivelse af produktet */
+    /* .textbox{
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.textbox p{
+    margin-block-end: 0;
+}
+
+.kaninBe{
+    margin: 4vh 2vh 4vh 2vh;
+}
+
+.textbox h3{
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+.beskrivelse {
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+.vigtig{
+    font-weight: bold;
+    font-style: italic;
+}
+.textbox h4{
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-style: italic;
+    text-align: end;
+    margin-bottom: 0;
+    margin-top: 2vh;
+} */
+    /* Beskrivelse af produktet slut*/
+    /* Forslag af andre produkter */
+    /* .persuasive{
+    font-family: 'Helvetica';
+    font-weight: bold;
+    text-align: center;
+}
+.forslag{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85vw;
+    margin: auto;
+}
+.pforslag{
+    width: 25vw;
+}
+.stor{
+    width: 20vw;
+} */
+    /* Forslag af andre produkter slut*/
+    /* Husk kokosolie */
+    /* .huskKokos{
+    margin-top: 4vh;
+}
+
+.huskKokos h2{
+    font-family: 'Organo';
+    font-size: 4vh;
+    text-align: center;
+}
+
+
+.olie section h3{
+    font-size: 2vh ;
+}
+
+.bkokos{
+    font-size: 1.5vh;
+} */
+    /* Husk kokosolie slut */
+    /* detaljeret side slut */
+  
+    /*Footer styling*/
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .foot-webshop {
+        columns: 1;
+        justify-content: center;
+        width: 30vw;
+        padding: 0;
+        line-height: 2;
+    }
+    .footer-copyright {
+        padding-left: 2.7%;
+        padding-right: 7.3%;
+    }
+    .brand-title-foot {
+        width: 30vw;
+    }
+    .SoMe-icons {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+    .SoMe-icons header {
+        font-size: 1.6vw;
+        margin-top: 40px;
+        font-family: "Helvetica";
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .SoMe {
+        margin-top: 30px;
+    }
+    .SoMe i {
+        color: var(--font-black)
+    }
+    .pc {
+        display: flex;
+    }
+    .mobile {
+        display: none;
+    }
+    /* inkøbskurv */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #flex2 {
+        flex-direction: column;
+    }
+    .inkobs {
+        height: 60vw;
+        width: 55vw;
+        flex: 50%;
+    }
+    .kaninimg {
+        margin-left: -400px;
+        width: 12vw;
+        height: 10vw;
+    }
+    .boxkurv h3 {
+        padding-top: 20px;
+    }
+    .din {
+        font-size: 30px;
+    }
+    .kaninpris {
+        padding-left: 530px;
+        position: absolute;
+        margin-top: -150px;
+    }
+    .kanin {
+        padding-left: 250px;
+        font-size: 20px;
+    }
+    .farve {
+        font-size: 16px;
+        text-align: left;
+        margin-top: -20px;
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-style: normal;
+    }
+    .antal {
+        font-size: 16px;
+        text-align: left;
+        margin-top: -20px;
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-style: normal;
+    }
+    .fjern {
+        font-size: 14px;
+        text-align: right;
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-style: normal;
+    }
+    .linje {
+        width: 90%;
+    }
+    .kokosimg {
+        width: 100px;
+        height: 145px;
+        margin-right: 200px;
+    }
+    .prisolie {
+        margin-top: -80px;
+        padding-left: 192px;
+        position: absolute;
+    }
+    .Mængde {
+        font-size: 16px;
+        text-align: left;
+        margin-top: -20px;
+        font-family: 'Helvetica';
+        font-weight: normal;
+        font-style: normal;
+    }
+    .kokos {
+        text-align: left;
+        font-size: 18px;
+        margin-top: -20px;
+    }
+    .boxpris {
+        margin-top: auto;
+        height: 18vw;
+        width: 35vw;
+    }
+    .sub {
+        text-align: left;
+        font-size: 20px;
+    }
+    .prissub {
+        text-align: right;
+        font-size: 20px;
+        margin-top: -37px;
+    }
+    .lev {
+        text-align: left;
+        font-size: 20px;
+    }
+    .prislev {
+        text-align: right;
+        font-size: 20px;
+        margin-top: -37px;
+    }
+    .ialt {
+        font-size: 20px;
+        text-align: left;
+        margin-top: -30px;
+    }
+    .prisialt {
+        text-align: right;
+        font-size: 20px;
+    }
+    .prisknap {
+        border-radius: 20px;
+        font-size: 20px;
+        margin-left: -150px;
+        position: absolute;
+        margin-top: -30px;
+    }
+    .rabatkode {
+        text-align: left;
+        font-size: 25px;
+    }
+    .rabatkasse {
+        text-align: left;
+        margin-top: -20px;
+    }
+    .rabat {
+        margin-top: auto;
+        width: 35vw;
+        height: 20.4vw;
+    }
+    .tilf {
+        border-radius: 20px;
+        font-size: 20px;
+        margin-right: -120px;
+    }
+    .betaling {
+        text-align: left;
+        margin-top: -20px;
+    }
+    .andre {
+        font-size: 30px;
+        text-align: center;
+    }
+    .andre1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mpay {
+        height: 88px;
+    }
+    .boxkurv {
+        margin-top: 0%;
+    }
+    /*Informationside styling*/
+    .section-formular {
+        display: flex;
+        width: 45%;
+        justify-content: center;
+        background-color: #F1ECE8;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        padding: 0 20px 20px 20px;
+        border-radius: 10px;
+    }
+    .section-formular header {
+        background-color: #F1ECE8
+    }
+    .section-formular input {
+        height: 30px;
+        margin-top: 20px;
+        border: 1px solid black;
+    }
+    .payment form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .payment form img {
+        width: 12%;
+    }
+    .gls {
+        margin-top: 0px;
+        width: 45%;
+    }
+    .gls iframe {
+        height: 70%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .gls img {
+        width: 20%;
+        margin-top: 10px;
+    }
+    .payment {
+        width: 45%;
+        margin: 30px;
+    }
+    .banner-payment {
+        height: 200px;
+        width: 45%;
+        padding: 0px;
+    }
+    .banner-payment img {
+        width: 100%;
+        height: 100%;
+    }
+    .banner-payment h1 {
+        text-align: center;
+        color: #E2E6E5;
+        font-family: 'organo';
+        font-size: 2vw;
+        margin-top: -37%;
+    }
+    .container-row {
+        display: flex;
+        flex-direction: row;
+        columns: 2;
+    }
+    /*Kurv*/
+    .pull {
+        height: 60%;
+    }
+    .section-rabat {
+        height: 19.5vw;
+        position: absolute;
+        right: 0.5%;
+        margin-top: -21%;
+    }
+    .section-rabat h2 {
+        margin-bottom: 0px
+    }
+    .section-rabat img {
+        max-width: 120px;
+        max-height: 90px;
+    }
+    .rød {
+        color: red;
+    }
+}
+
+#flex2 {
+    flex-direction: column;
+}
+
+.inkobs {
+    height: 60vw;
+    width: 55vw;
+    flex: 50%;
+}
+
+.kaninimg {
+    margin-left: -400px;
+    width: 12vw;
+    height: 10vw;
+}
+
+.boxkurv h3 {
+    padding-top: 20px;
+}
+
+.din {
+    font-size: 30px;
+}
+
+.kaninpris {
+    padding-left: 530px;
+    position: absolute;
+    margin-top: -150px;
+}
+
+.kanin {
+    padding-left: 250px;
+    font-size: 20px;
+}
+
+.farve {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.antal {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fjern {
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.linje {
+    width: 90%;
+}
+
+.kokosimg {
+    width: 100px;
+    height: 145px;
+    margin-right: 200px;
+}
+
+.prisolie {
+    margin-top: -80px;
+    padding-left: 192px;
+    position: absolute;
+}
+
+.Mængde {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kokos {
+    text-align: left;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.boxpris {
+    margin-top: auto;
+    height: 18vw;
+    width: 35vw;
+}
+
+.sub {
+    text-align: left;
+    font-size: 20px;
+}
+
+.prissub {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -37px;
+}
+
+.lev {
+    text-align: left;
+    font-size: 20px;
+}
+
+.prislev {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -37px;
+}
+
+.ialt {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -30px;
+}
+
+.prisialt {
+    text-align: right;
+    font-size: 20px;
+}
+
+.prisknap {
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: -150px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.rabatkode {
+    text-align: left;
+    font-size: 25px;
+}
+
+.rabatkasse {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.rabat {
+    margin-top: auto;
+    width: 35vw;
+    height: 20.4vw;
+}
+
+.tilf {
+    border-radius: 20px;
+    font-size: 20px;
+    margin-right: -120px;
+}
+
+.betaling {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.andre {
+    font-size: 30px;
+    text-align: center;
+}
+
+.andre1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mpay {
+    height: 88px;
+}
+
+.boxkurv {
+    margin-top: 0%;
+}
