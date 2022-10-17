@@ -8,6 +8,21 @@ hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
 });
 
+/*Dette er gør at pop-uppen dukker op når siden loader*/
+
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000 
+    )
+});
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+
 
 
 /*Dette er for at finde længden på de forskellige længder path i svg filen*/
